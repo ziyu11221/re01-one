@@ -135,6 +135,7 @@
     }
     .dongtu{
         margin-left: 31px;
+        width: 373px;
     }
 </style>
 
@@ -231,7 +232,7 @@
             <br>
             <div class="text1">(2)雷牙之咒(附雷)</div>
             <br>
-            <img class="dongtu" src="./inger/ful.gif" alt="">
+            <img id="dongtu1" class="dongtu" src="" alt="">
             <br>
             <div class="palutext2">
                 须要点亮雷电附魔技能进行解锁，召唤一道闪电劈到枪尖上，来使武器发光，并强化武器的伤害及技能，该技能释放之后，会持续一段时间。在持续时间内，会为武器的普攻附加额外的30点伤害（由原本的60点增加到90点），如果攻击目标处于潮湿状态，该伤害会增加60点（即普攻对潮湿目标造成120点伤害）。技能持续期间内，雷法值会持续消耗，初始消耗速度为每秒6点，但可通过点亮魔力凝聚技能来减少雷法值的消耗（从每秒6点减到每秒3点），雷法值消耗完则技能自动停止，或者也可以同过按H键或者制作栏中的熄灭雷牙之咒来主动关闭。
@@ -239,7 +240,7 @@
             <br>        
             <div class="text1">(3)雷牙千斩</div>
             <br>
-            <img class="dongtu" src="./inger/lyqz.gif" alt="">
+            <img id="dongtu2" class="dongtu" src="" alt="">
             <br>
             <div class="palutext2">
                 手持武器灾厄雷牙右键触发。朝目标方向冲刺一段距离，并对所有经过的目标造成6次伤害，每次伤害为30点，消耗75雷法值，点亮聚能穿刺技能后伤害变为40且变为位面伤害，点亮魔耀斩击技能并击败终焉极蝶后额外增加40点位面伤害。点亮技能双雷破晓技能后，附雷状态下该技能得到强化，冲刺结束之后，会在经过的区域落下两道闪电，每道闪电造成100点伤害。
@@ -247,7 +248,7 @@
             <br>
             <div class="text1">(4)雷鸣腾跃</div>
             <br>
-            <img class="dongtu" src="./inger/lnty.gif" alt="">
+            <img id="dongtu3" class="dongtu" src="" alt="">
             <br>
             <div class="palutext2">
                 在装备栏右键武器图标，在短暂蓄力(初始为1.5秒可点亮魔雷之讯技能后可减少到两秒)后跃至空中4秒，随后可以降落至大范围内的指定位置，落地时造成200伤害(点亮音爆重击技能后可提升至300点伤害)
@@ -255,18 +256,27 @@
             <br>
             <div class="text1">（5）电光一闪</div>
             <br>
-            <img class="dongtu" src="./inger/dgys.gif" alt="">
+            <img id="dongtu4" class="dongtu" src="" alt="">
+            <img src="" alt="">
             <br>
             <div class="palutext2">
-                 通过C键释放，朝面向的方向冲刺一段距离，同时消耗20点雷法值，初始CD1秒点亮讯雷闪跃技能后可减少CD最多减少至无CD。如果释放过程中出现问题，可能是按键C绑定了其他功能，调整之后即可正常。</div>、
+                 通过C键释放，朝面向的方向冲刺一段距离，同时消耗20点雷法值，初始CD1秒点亮讯雷闪跃技能后可减少CD最多减少至无CD。如果释放过程中出现问题，可能是按键C绑定了其他功能，调整之后即可正常。</div>
             <br>
             <div class="text1">（6）洛亚之盈 </div>
             <br>
-            <img class="dongtu" src="./inger/lyzy.gif" alt="">
+            <img class="dongtu" id="dongtu" src="" alt="">
             <br>
             <div class="palutext2"> 通过制作栏中的洛亚之盈来释放，获得飞行能力，无视体积碰撞，增加20%的移动速度。开启时持续消耗雷法值</div>
         </div>
     </div>
 </body>
-
+<script>
+    window.onload=function(){
+        document.getElementById("dongtu1").src="./inger/ful.gif"
+        document.getElementById("dongtu2").src="./inger/lyqz.gif"
+        document.getElementById("dongtu3").src="./inger/lnty.gif"
+        document.getElementById("dongtu4").src="./inger/dgys.gif"
+        document.getElementById("dongtu").src="./inger/lyzy.gif"
+    }
+</script>
 </html>
