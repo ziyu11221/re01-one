@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="http://at.alicdn.com/t/c/font_4380951_gurv3kcz5vo.css">
 </head>
 <style>
+    html{
+        scroll-behavior: smooth;
+    }
     * {
         padding: 0;
         margin: 0;
@@ -66,6 +69,7 @@
         font-size: 25px;
         text-align: center;
         line-height: 50px;
+        cursor: pointer;
     }
     .mdbox2 {
         display: inline-block;
@@ -85,6 +89,7 @@
         width: 170px;
         height: 100px;
         display: none;
+        cursor: pointer;
     }
 
     .list1 {
@@ -93,7 +98,7 @@
         background-color: #e3e3e3;
         float: left;
         width: 170px;
-        
+        cursor: pointer;
         display: none;
     }
     .list2 {
@@ -102,7 +107,7 @@
         background-color: #e3e3e3;
         float: left;
         width: 170px;
-       
+        cursor: pointer;
         display: none;
     }
 
@@ -181,7 +186,7 @@
 
 <body>
     <div class="dingwei">
-        <div style="font-size: 25px;" id="clickOpen" class="mdbox">
+        <div style="cursor: pointer;font-size: 25px;" id="clickOpen" class="mdbox">
             食材 <i class="ziti iconfont icon-xiahua"></i>
         </div>
         <br>
@@ -192,7 +197,7 @@
             </ul>
         </div>
 
-        <div id="clickOpen1" class="mdbox1">
+        <div style="cursor: pointer;" id="clickOpen1" class="mdbox1">
             料理 <i class="ziti iconfont icon-xiahua"></i>
         </div>
         <br>
@@ -208,7 +213,7 @@
             </ul>
         </div>
 
-        <div id="clickOpen2" class="mdbox2">
+        <div style="cursor: pointer;" id="clickOpen2" class="mdbox2">
             buff类料理 <i class="ziti iconfont icon-xiahua"></i>
         </div>
         <br>
