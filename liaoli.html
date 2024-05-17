@@ -15,12 +15,13 @@
     * {
         padding: 0;
         margin: 0;
+        box-sizing: border-box;
     }
 
     .bigbox {
         width: 100%;
         height: 100%;
-        background: url(./inger/背景.jpg);
+        background: url(./inger/bjt.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -68,33 +69,53 @@
 
     .mdbox {
         display: inline-block;
-        width: 170px;
+        width: 200px;
         height: 50px;
-        background-color: #e3e3e3;
         font-size: 30px;
         text-align: center;
         line-height: 50px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #00aaff;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #add8e6;
+
+    }
+
+    .ietm:hover {
+        background-color: #00ff7b;
+        color: white;
     }
 
     .mdbox1 {
         display: inline-block;
-        width: 170px;
+        width: 200px;
         height: 50px;
-        background-color: #e3e3e3;
+        background-color: #f3f3f3;
         font-size: 25px;
         text-align: center;
         line-height: 50px;
         cursor: pointer;
+        background-color: #00aaff;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #add8e6;
     }
 
     .mdbox2 {
         display: inline-block;
-        width: 170px;
+        width: 200px;
         height: 50px;
-        background-color: #e3e3e3;
+      
         font-size: 25px;
         text-align: center;
         line-height: 50px;
+        background-color: #00aaff;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #add8e6;
     }
 
     .list {
@@ -129,21 +150,42 @@
     }
 
     .ietm {
-        width: 150px;
+        width: 200px;
         height: 50px;
         float: left;
         font-size: 20px;
         line-height: 50px;
         text-align: center;
+        display: block;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #add8e6;
+        background-color: #c7ecff;
+    }
 
+    .ietm a {
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
     }
 
     .dingwei {
-        position: fixed;
+        position: sticky;
+        position: -webkit-sticky; 
         top: 0px;
         left: 0px;
+        border: none;
+        width: 200px;
+        height: 151px;
+        
     }
-
+    .dingwei1{
+        position: absolute;
+        top: 50px;
+        width: 202px;
+        height: 9281px;
+        background-color: #e3e3e3;
+    }
     tr {
         display: table-row;
         vertical-align: inherit;
@@ -169,10 +211,11 @@
         display: table-cell;
         vertical-align: inherit;
         unicode-bidi: isolate;
-        width: 44px;
+        width: 45px;
         text-align: center;
-        height: 33px;
+        height: 33.2px;
         font-size: 13px;
+
     }
 
     table {
@@ -202,15 +245,54 @@
     }
 
     .kuang {
-        background-color: #e1bf96;
+        background-color: rgba(255, 255, 255, 0.9);
         width: 960px;
         border-radius: 5px;
         margin-left: 20px;
     }
+
+    .ul1 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 1px solid #e7e7e7;
+        background-color: #f3f3f3;
+
+    }
+
+    .li1 {
+        float: left;
+        margin: auto;
+    }
+
+    .li1 a {
+        display: block;
+        color: #666;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        width: 100px;
+    }
+
+    .li1 a:hover:not(.active) {
+        background-color: #ddd;
+    }
+
+    .li1 a.active {
+        color: white;
+        background-color: #4CAF50;
+    }
+
+    .daohanglan1 {
+        width: 700px;
+       
+        margin: auto;
+    }
 </style>
 
 <body>
-
+<div class="dingwei1">
     <div class="dingwei">
         <div style="cursor: pointer;font-size: 25px;" id="clickOpen" class="mdbox">
             食材 <i class="ziti iconfont icon-xiahua"></i>
@@ -261,10 +343,18 @@
             </ul>
         </div>
     </div>
-
+</div>
     <div class="bigbox">
 
-
+        <ul class="ul1">
+            <div class="daohanglan1">
+                <li class="li1"><a href="#home">主页</a></li>
+                <li class="li1"><a href="#news">人物</a></li>
+                <li class="li1"><a href="#contact">物品</a></li>
+                <li class="li1"><a class="active" href="https://ziyu11221.github.io/re01-one/liaoli.html">食谱</a></li>
+                <li class="li1"><a href="#about">boss</a></li>
+            </div>
+        </ul>
         <div class="box">
 
             <div style="color: aliceblue;" class="liaoli">
@@ -281,7 +371,7 @@
                     (1).粮袋
                     <br>
                     <br>
-                    <hr style="position: absolute;left: 0px;" color="#f2f2f2" size="1" width="958px">
+                    <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
                     <br>
                     <img class="liaolitu" src="./inger/liangdai.jpg" alt="">
                 </div>
@@ -306,7 +396,7 @@
                             <thead>
                                 <tr>
                                     <th>饱食</th>
-                                    <th style="left: 45px;">理智</th>
+                                    <th style="padding-right: 5px; left: 45px;">理智</th>
                                     <th style="left: 90px;border-right: 1px solid #000000;">生命</th>
                                 </tr>
                             </thead>
@@ -318,8 +408,9 @@
                 <thead>
                     <tr>
                         <td><span style="color: forestgreen;">+25</span></td>
-                        <td><span style="color: brown;">- 50</span></td>
-                        <td style="border-right: 1px solid #000000;"><span style="color: brown;">- 3</span></td>
+                        <td><span style=" color: brown;">- 50</span></td>
+                        <td style="width: 45.28px; border-right: 1px solid #000000;"><span style="color: brown;">-
+                                3</span></td>
                     </tr>
                 </thead>
                 </table>
@@ -333,7 +424,7 @@
             (2). 奶油
             <br>
             <br>
-            <hr style="position: absolute;left: 0px;" color="#f2f2f2" size="1" width="958px">
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
             <br>
             <img class="liaolitu" src="./inger/naiyou.jpg" alt="">
         </div>
@@ -357,10 +448,10 @@
                     <table>
                         <thead>
                             <tr>
-                                <th>饱食</th>
-                                <th style="left: 45px;">理智</th>
-                                <th style="width: 34px;
-                                    height: 22px; left: 90px;border-right: 1px solid #000000;">生命</th>
+                                <th style="width: 45px;">饱食</th>
+                                <th style="width: 45px; left: 45px;">理智</th>
+                                <th style="width: 45px;
+                                   padding: 5px;  left: 90px;border-right: 1px solid #000000;">生命</th>
                             </tr>
                         </thead>
                     </table>
@@ -386,7 +477,7 @@
             <div id="a3" class="liaolitext1">(1).蛋包饭
                 <br>
                 <br>
-                <hr style="position: absolute;left: 0px;" color="#f2f2f2" size="1" width="958px">
+                <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
                 <br>
                 <img class="liaolitu" src="./inger/danbaofan.jpg" alt="">
             </div>
@@ -419,7 +510,8 @@
                     <tr>
                         <td><span style="color: forestgreen;">+25</span></td>
                         <td><span style="color: brown;">- 50</span></td>
-                        <td style="border-right: 1px solid #000000;"><span style="color: brown;">- 3</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span style="color: brown;">-
+                                3</span></td>
                     </tr>
                 </thead>
                 </table>
@@ -432,7 +524,7 @@
         <div id="a4" class="liaolitext1">(2).憨八嘎
             <br>
             <br>
-            <hr style="position: absolute;left: 0px;" color="#f2f2f2" size="1" width="958px">
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
             <br>
             <img class="liaolitu" src="./inger/hbg.jpg" alt="">
         </div>
@@ -464,7 +556,8 @@
                     <tr>
                         <td><span style="color: forestgreen;">+125</span></td>
                         <td><span style="color: forestgreen;">+10</span></td>
-                        <td style="border-right: 1px solid #000000;"><span style="color: forestgreen;">+8</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+8</span></td>
                     </tr>
                 </thead>
                 </table>
@@ -477,7 +570,7 @@
         <div id="a5" class="liaolitext1">(3).拔丝萝卜脆
             <br>
             <br>
-            <hr style="position: absolute;left: 0px;" color="#f2f2f2" size="1" width="958px">
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
             <br>
             <img class="liaolitu" src="./inger/bslbc.jpg" alt="">
         </div>
@@ -509,7 +602,8 @@
                     <tr>
                         <td><span style="color: forestgreen;">+25</span></td>
                         <td><span style="color: forestgreen;">+15</span></td>
-                        <td style="border-right: 1px solid #000000;"><span style="color: forestgreen;">+30</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+30</span></td>
                     </tr>
                 </thead>
                 </table>
@@ -522,7 +616,7 @@
         <div id="a6" class="liaolitext1">(4).鱼香盛宴
             <br>
             <br>
-            <hr style="position: absolute;left: 0px;" color="#f2f2f2" size="1" width="958px">
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
             <br>
             <img class="liaolitu" src="./inger/yxsy.jpg" alt="">
         </div>
@@ -554,7 +648,8 @@
                     <tr>
                         <td><span style="color: forestgreen;">+150</span></td>
                         <td><span style="color: forestgreen;">+20</span></td>
-                        <td style="border-right: 1px solid #000000;"><span style="color: forestgreen;">+60</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+60</span></td>
                     </tr>
                 </thead>
                 </table>
@@ -567,7 +662,7 @@
         <div id="a7" class="liaolitext1">(5).红烩猫猫鱼
             <br>
             <br>
-            <hr style="position: absolute;left: 0px;" color="#f2f2f2" size="1" width="958px">
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
             <br>
             <img class="liaolitu" src="./inger/hhmmy.jpg" alt="">
         </div>
@@ -599,7 +694,8 @@
                     <tr>
                         <td><span style="color: forestgreen;">+62.5</span></td>
                         <td><span style="color: forestgreen;">+30</span></td>
-                        <td style="border-right: 1px solid #000000;"><span style="color: forestgreen;">+60</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+60</span></td>
                     </tr>
                 </thead>
                 </table>
@@ -612,7 +708,7 @@
         <div id="a8" class="liaolitext1">(6).榴莲刺刺酥
             <br>
             <br>
-            <hr style="position: absolute;left: 0px;" color="#f2f2f2" size="1" width="958px">
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
             <br>
             <img class="liaolitu" src="./inger/llccs.jpg" alt="">
         </div>
@@ -644,7 +740,8 @@
                     <tr>
                         <td><span style="color: forestgreen;">+25</span></td>
                         <td><span style="color: forestgreen;">+15</span></td>
-                        <td style="border-right: 1px solid #000000;"><span style="color: forestgreen;">+20</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+20</span></td>
                     </tr>
                 </thead>
                 </table>
@@ -660,7 +757,7 @@
         <div id="a9" class="liaolitext1">(1)."我创死你!"
             <br>
             <br>
-            <hr style="position: absolute;left: 0px;" color="#f2f2f2" size="1" width="958px">
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
             <br>
             <img class="liaolitu" src="./inger/ccdg.jpg" alt="">
         </div>
@@ -694,7 +791,8 @@
                     <tr>
                         <td><span style="color: forestgreen;">+12.5</span></td>
                         <td><span style="color: forestgreen;">+15</span></td>
-                        <td style="border-right: 1px solid #000000;"><span style="color: forestgreen;">+8</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+8</span></td>
                     </tr>
                 </thead>
                 </table>
@@ -707,7 +805,7 @@
         <div id="a10" class="liaolitext1">(2).宝石苹果冰沙
             <br>
             <br>
-            <hr style="position: absolute;left: 0px;" color="#f2f2f2" size="1" width="958px">
+            <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
             <br>
             <img class="liaolitu" src="./inger/bspgbs.jpg" alt="">
         </div>
@@ -741,7 +839,8 @@
                     <tr>
                         <td><span style="color: forestgreen;">+12.5</span></td>
                         <td><span style="color: forestgreen;">+50</span></td>
-                        <td style="border-right: 1px solid #000000;"><span style="color: forestgreen;">+40</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+40</span></td>
                     </tr>
                 </thead>
                 </table>
@@ -754,7 +853,7 @@
         <div id="a11" class="liaolitext1">(3).咖喱烩面
             <br>
             <br>
-            <hr style="position: absolute;left: 0px;" color="#f2f2f2" size="1" width="958px">
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
             <br>
             <img class="liaolitu" src="./inger/glhm.jpg" alt="">
         </div>
@@ -788,7 +887,8 @@
                     <tr>
                         <td><span style="color: forestgreen;">+100</span></td>
                         <td><span style="color: forestgreen;">+10</span></td>
-                        <td style="border-right: 1px solid #000000;"><span style="color: forestgreen;">+40</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+40</span></td>
                     </tr>
                 </thead>
                 </table>
@@ -801,7 +901,7 @@
         <div id="a12" class="liaolitext1">(4).雪顶苏打
             <br>
             <br>
-            <hr style="position: absolute;left: 0px;" color="#f2f2f2" size="1" width="958px">
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
             <br>
             <img class="liaolitu" src="./inger/xdsd.jpg" alt="">
         </div>
@@ -835,7 +935,8 @@
                     <tr>
                         <td><span style="color: forestgreen;">+18.8</span></td>
                         <td><span style="color: forestgreen;">+33</span></td>
-                        <td style="border-right: 1px solid #000000;"><span style="color: forestgreen;">+10</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+10</span></td>
                     </tr>
                 </thead>
                 </table>
@@ -848,7 +949,7 @@
         <div id="a13" class="liaolitext1">(5).焦糖布丁
             <br>
             <br>
-            <hr style="position: absolute;left: 0px;" color="#f2f2f2" size="1" width="958px">
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
             <br>
             <img class="liaolitu" src="./inger/jtbd.jpg" alt="">
         </div>
@@ -882,7 +983,8 @@
                     <tr>
                         <td><span style="color: forestgreen;">+25</span></td>
                         <td><span style="color: forestgreen;">+15</span></td>
-                        <td style="border-right: 1px solid #000000;"><span style="color: forestgreen;">+8</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+8</span></td>
                     </tr>
                 </thead>
                 </table>
@@ -895,7 +997,7 @@
         <div id="a14" class="liaolitext1">(6).蒜蓉鲜蛤汤
             <br>
             <br>
-            <hr style="position: absolute;left: 0px;" color="#f2f2f2" size="1" width="958px">
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
             <br>
             <img class="liaolitu" src="./inger/srxgt.jpg" alt="">
         </div>
@@ -929,7 +1031,8 @@
                     <tr>
                         <td><span style="color: forestgreen;">+37.5</span></td>
                         <td><span style="color: forestgreen;">+30</span></td>
-                        <td style="border-right: 1px solid #000000;"><span style="color: forestgreen;">+40</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+40</span></td>
                     </tr>
                 </thead>
                 </table>
@@ -942,7 +1045,7 @@
         <div id="a15" class="liaolitext1">(7).红霜雪糕
             <br>
             <br>
-            <hr style="position: absolute;left: 0px;" color="#f2f2f2" size="1" width="958px">
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
             <br>
             <img style="margin-left: 40px;" class="liaolitu" src="./inger/hsxg.jpg" alt="">
         </div>
@@ -976,7 +1079,8 @@
                     <tr>
                         <td><span style="color: forestgreen;">+9.4</span></td>
                         <td><span style="color: forestgreen;">+15</span></td>
-                        <td style="border-right: 1px solid #000000;"><span style="color: forestgreen;">+10</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+10</span></td>
                     </tr>
                 </thead>
                 </table>
@@ -989,9 +1093,9 @@
         <div id="a16" class="liaolitext1">(8).冰镇大西瓜
             <br>
             <br>
-            <hr style="position: absolute;left: 0px;" color="#f2f2f2" size="1" width="958px">
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
             <br>
-            <img style="margin-left: 40px;" class="liaolitu" src="./inger/bzdxg.jpg" alt="">
+            <img class="liaolitu" src="./inger/bzdxg.jpg" alt="">
         </div>
         <div class="liaolitext2">
             烹饪要求：三个西瓜，冰.
@@ -1023,7 +1127,8 @@
                     <tr>
                         <td><span style="color: forestgreen;">+12.5</span></td>
                         <td><span style="color: forestgreen;">+15</span></td>
-                        <td style="border-right: 1px solid #000000;"><span style="color: forestgreen;">+10</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+10</span></td>
                     </tr>
                 </thead>
                 </table>
@@ -1033,8 +1138,13 @@
     </div>
     </div>
     <div class="kuang">
-        <div id="a17" class="liaolitext1">(9).鸳鸯锅</div>
-        <img style="margin-left: 40px;" class="liaolitu" src="./inger/yyg.jpg" alt="">
+        <div id="a17" class="liaolitext1">(9).鸳鸯锅
+        <br>
+        <br>
+        <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
+        <br>
+        <img style="width: 150px;" class="liaolitu" src="./inger/yyg.jpg" alt="">
+    </div>
         <div class="liaolitext2">
             烹饪要求：两个辣椒，0.5菜度，1肉度.
             <br>
@@ -1065,7 +1175,8 @@
                     <tr>
                         <td><span style="color: forestgreen;">+50</span></td>
                         <td><span style="color: forestgreen;">+5</span></td>
-                        <td style="border-right: 1px solid #000000;"><span style="color: forestgreen;">+20</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+20</span></td>
                     </tr>
                 </thead>
                 </table>
@@ -1078,10 +1189,10 @@
         <div id="a18" class="liaolitext1">(10).蜘蛛网炒树枝
             <br>
             <br>
-            <hr style="position: absolute;left: 0px;" color="#f2f2f2" size="1" width="958px">
+            <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
             <br>
-        <img class="liaolitu" src="./inger/zzwcsz.jpg" alt="">
-    </div>
+            <img class="liaolitu" src="./inger/zzwcsz.jpg" alt="">
+        </div>
         <div class="liaolitext2">
             烹饪要求：两个树枝，两个蜘蛛网.
             <br>
@@ -1111,7 +1222,8 @@
                     <tr>
                         <td><span style="color: forestgreen;">+25</span></td>
                         <td><span style="color: brown;">-15</span></td>
-                        <td style="border-right: 1px solid #000000;"><span style="color: brown;">-3</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: brown;">-3</span></td>
                     </tr>
                 </thead>
                 </table>
@@ -1124,10 +1236,10 @@
         <div style="margin-bottom: 20px;" id="a19" class="liaolitext1">(11).红烧蛙镜鱼
             <br>
             <br>
-            <hr style="position: absolute;left: 0px;" color="#f2f2f2" size="1" width="958px">
+            <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
             <br>
-        <img class="liaolitu" src="./inger/hsjwy.jpg" alt="">
-    </div>
+            <img class="liaolitu" src="./inger/hsjwy.jpg" alt="">
+        </div>
         <div class="liaolitext2">
             烹饪要求：蛙腿，大蒜，鱼.
             <br>
@@ -1157,7 +1269,8 @@
                     <tr>
                         <td><span style="color: forestgreen;">+37.5</span></td>
                         <td><span style="color: forestgreen;">+15</span></td>
-                        <td style="border-right: 1px solid #000000;"><span style="color: forestgreen;">+40</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+40</span></td>
                     </tr>
                 </thead>
                 </table>
