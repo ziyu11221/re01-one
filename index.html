@@ -2,291 +2,444 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>饥荒星卡mod介绍</title>
+	<meta charset="utf-8">
+	<title>饥荒星卡mod介绍</title>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<style>
+		body {
+			margin: 0;
+		}
+
+		h2 {
+			font-family: -webkit-pictograph;
+			font-size: 30px;
+			font-style: italic;
+			text-align: center;
+			color: aliceblue;
+		}
+
+		.swiper-container {
+			padding-bottom: 40px;
+			margin: auto;
+			overflow: hidden;
+			width: 1300px;
+		}
+
+		.swiper-slide {
+			width: 600px;
+			transition-timing-function: linear;
+		}
+
+		@media only screen and (max-width:1200px) {
+			.swiper-slide {
+				width: 770px;
+			}
+		}
+
+		@media only screen and (max-width:980px) {
+			.swiper-slide {
+				width: 471px;
+			}
+		}
+
+		@media only screen and (max-height:480px) {
+			.swiper-slide {
+				width: 471px;
+			}
+		}
+
+		.swiper-slide img {
+			width: 100%;
+			border-radius: 4px;
+		}
+
+		.swiper-slide .title {
+			position: absolute;
+			transform: rotate(90deg);
+			transform-origin: left top;
+			left: -3px;
+			font-size: 11px;
+			color: rgb(102, 102, 102);
+		}
+
+		.swiper-button-next,
+		.swiper-button-prev {
+			width: 70px;
+			height: 100px;
+			background-size: 70px 100px;
+			margin-top: -56px;
+			outline: none;
+		}
+
+		.swiper-button-next {
+			background-image: url(img/cursor-next.png);
+		}
+
+		.swiper-button-prev {
+			background-image: url(img/cursor-prev.png);
+		}
+
+		.swiper-pagination-bullet {
+			background: none;
+			opacity: 1;
+			margin: 0 6px !important;
+			width: 9px;
+			height: 9px;
+			position: relative;
+			outline: none;
+			vertical-align: middle;
+		}
+
+		.swiper-pagination-bullet span {
+			width: 3px;
+			height: 3px;
+			background: #CCC;
+			display: block;
+			border-radius: 50%;
+			margin-top: 3px;
+			margin-left: 3px;
+		}
+
+		.swiper-pagination-bullet i {
+			background: #000;
+			height: 1px;
+			width: 20px;
+			position: absolute;
+			top: 4px;
+			transform: scaleX(0);
+			transform-origin: left;
+			z-index: 3;
+			transition-timing-function: linear;
+		}
+
+		.swiper-pagination-bullet-active span,
+		.swiper-pagination-bullet:hover span {
+			width: 9px;
+			height: 9px;
+			margin-top: 0;
+			margin-left: 0;
+			background: #000;
+			position: relative;
+			z-index: 1;
+		}
+
+		.swiper-pagination-bullet-active i {
+			animation: middle 6s;
+		}
+
+		.swiper-pagination-bullet:first-child.swiper-pagination-bullet-active i {
+			animation: first 6s;
+		}
+
+		.swiper-pagination-bullet:last-child.swiper-pagination-bullet-active i {
+			animation: last 6s;
+		}
+
+		@keyframes first {
+			0% {
+				transform: scaleX(0.5);
+				left: 0px;
+			}
+
+			/*091*/
+			100% {
+				transform: scaleX(1);
+				left: 2px;
+			}
+
+			/*0915*/
+		}
+
+		@keyframes last {
+			0% {
+				transform: scaleX(0.7);
+				left: -10px;
+			}
+
+			/*1090*/
+			20% {
+				transform: scaleX(0.3);
+				left: 2px;
+			}
+
+			/*090*/
+			100% {
+				transform: scaleX(0.3);
+				left: 0px;
+			}
+
+			/*090*/
+		}
+
+		@keyframes middle {
+			0% {
+				transform: scaleX(0.7);
+				left: -10px;
+			}
+
+			/*1091*/
+			20% {
+				transform: scaleX(0.45);
+				left: 2px;
+			}
+
+			/*092*/
+			100% {
+				transform: scaleX(1);
+				left: 2px;
+			}
+
+			/*0913*/
+		}
+
+		.indextext {
+			width: 100%;
+			height: 50px;
+			margin: 0px;
+			background-color: darkturquoise;
+			line-height: 50px;
+		}
+
+
+
+		ul {
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			overflow: hidden;
+			border: 1px solid #e7e7e7;
+			background-color: #f3f3f3;
+
+		}
+
+		li {
+			float: left;
+			margin: auto;
+		}
+
+		li a {
+			display: block;
+			color: #666;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+			width: 100px;
+		}
+
+		li a:hover:not(.active) {
+			background-color: #ddd;
+		}
+
+		li a.active {
+			color: white;
+			background-color: #4CAF50;
+		}
+
+		.daohanglan1 {
+			width: 700px;
+			margin: auto;
+		}
+
+		.zz {
+			font-size: 20px;
+			float: right;
+			margin-right: 20px;
+		}
+
+		.bjbox {
+			width: 500px;
+	        border-style: solid;
+			border-width: 2px;
+			border-color: #add8e6;
+			padding: 10px;
+			margin-left: 30px;
+			float: left;
+		}
+
+		.bjjs {
+			font-size: 30px;
+			text-align: center;
+			
+		}
+
+		.bjtext {
+			font-size: 30px;
+			
+		}
+
+		.bjt {
+			background: url(./img/星卡.webp);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			background-position: center center;
+		
+			margin: auto;
+		}
+		.bjs{
+		    background: rgba(240, 248, 255, 0.9);
+			width: 1300px;
+			margin: auto;
+
+		}
+		.lianjie{
+	        float: left;
+	        border-style: solid;
+			border-width: 2px;
+			border-color: #add8e6;
+			padding: 10px;
+			margin-left: 30px;
+			width: 665px;
+			height: 370px;
+	     
+		}
+		.lianjie1{
+			float: left;
+			width: 329px;
+			height: 182px;
+	
+			border-style: solid;
+			border-width: 2px;
+			border-color: #00bfff;
+		}
+		.bjst{
+			height: 420px;
+		}
+	</style>
 </head>
-<style>
-    * {
-        padding: 0;
-        margin: 0;
-    }
-
-    .bigbox {
-        width: 1080px;
-        /* background-color: #ccc; */
-        margin: auto;
-    }
-
-    .upperend {
-        width: 100%;
-        height: 70px;
-    }
-
-    .uppbox1 {
-        line-height: 70px;
-        font-weight: bold;
-        margin-left: 20px;
-        width: 100px;
-        height: 70px;
-        text-align: center;
-        /* background-color: blue; */
-        float: left;
-        position: relative;
-    }
-
-    .uppbox12 {
-        display: none;
-        width: 100px;
-        height: 150px;
-        background-color: aquamarine;
-        position: absolute;
-    }
-
-    .uppbox1:hover .uppbox12 {
-        display: block;
-    }
-
-    .uppbox13 {
-        position: relative;
-        width: 100px;
-        height: 75px;
-    }
-
-    .uppbox13:hover .uppbox15 {
-        display: block;
-    }
-
-    .uppbox14 {
-        position: relative;
-        width: 100px;
-        height: 75px;
-    }
-
-    .uppbox15 {
-        position: absolute;
-        width: 100px;
-        height: 210px;
-        background-color: beige;
-        left: 100px;
-        top: 0px;
-        display: none;
-    }
-
-    .uppbox14:hover .uppbox17 {
-        display: block;
-    }
-
-    .uppbox17 {
-        position: absolute;
-        width: 100px;
-        height: 210px;
-        background-color: beige;
-        left: 100px;
-        top: 0px;
-        display: none;
-    }
-
-    .uppbox2 {
-        line-height: 70px;
-        font-weight: bold;
-        margin-left: 20px;
-        width: 100px;
-        height: 70px;
-        text-align: center;
-        /* background-color: blue; */
-        float: left;
-        position: relative;
-    }
-
-    .palu {
-        width: 1080px;
-    }
-
-    .palutext {
-        font-weight: bold;
-        text-align: center;
-        font-size: 30px;
-    }
-
-    .paluimg {
-        width: 250px;
-        margin-left: 420px;
-        margin-right: 280px;
-    }
-
-    .text {
-        font-size: 30px;
-    }
-
-    .text1 {
-        font-size: 25px;
-    }
-
-    .palutext1 {
-        font-size: 20px;
-        margin-left: 31px;
-        width: 400px;
-    }
-
-    .palutext2 {
-        font-size: 18px;
-        margin-left: 31px;
-    }
-
-    .dongtu {
-        margin-left: 31px;
-        width: 373px;
-    }
-</style>
 
 <body>
-    <div class="bigbox">
-        <div class="upperend">
-            <div class="uppbox1">
-                mod角色
-                <div class="uppbox12">
-                    <div class="uppbox13">帕噜
-                        <div class="uppbox15">
-                            <div class="uppbox16">
-                                属性
-                            </div>
-                            <div class="uppbox16">
-                                技能
-                            </div>
-                            <div class="uppbox16">
-                                专属制作
-                            </div>
-                        </div>
-                    </div>
-                    <div class="uppbox14">基斯
-                        <div class="uppbox17">
-                            <div class="uppbox18">
-                                属性
-                            </div>
-                            <div class="uppbox18">
-                                技能
-                            </div>
-                            <div class="uppbox18">
-                                专属制作
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="uppbox2">
-                mod物品
-            </div>
-            <div class="uppbox2">
-                食譜
-            </div>
-            <div class="uppbox2">
-                boss
-            </div>
-        </div>
-        <!-- <div>
-            故事背景
-        </div> -->
-        <br>
-        <br>
-        <br>
-        <div class="text">人物介绍：</div>
-        <br>
-        <br>
-        <div class="palu">
-            <div class="palutext">雷牙三魔官————雷牙.帕噜提扎努</div>
-            <br>
-            <br>
-            <br>
-            <img class="paluimg" src="./inger/palu.jpg" alt="">
-            <br>
-            <br>
-            <div class="text1">(1).人物三围</div>
-            <br>
-            <img style="width: 300px;" src="./inger/palu三维.jpg" alt="">
-            <div class="palutext1">生命值:200,饱食度:200,理智值:200</div>
-            <br>
-            <div class="text1">(2).雷法值</div>
-            <br>
-            <img style="width: 100px;" src="./inger/lfz.jpg" alt="">
-            <br>
-            <div class="palutext2">初始上限为75,可通过心之枪获取技能点,点亮技能异空适应性来提升上限,最大可提升至300点,雷法值会自动恢复,可点亮超凡体能技能与魔能转换技能来提升
-                恢复速度最高可提升至每秒10点，但在饥饿（饥饿值<=45时）或潮湿（潮湿度>40）时会降低回复速度。如果两者同时存在，则不回复。其技能的释放都需要消耗一定的雷法值。
-            </div>
-            <br>
-            <div class="text">武器及技能:</div>
-            <br>
-            <div class="text1">(1)灾厄雷牙</div>
-            <br>
-            <div style="width: 1080px;height: 198px;">
-                <img style="float: left; width: 82px;height: 198px;" src="./inger/Snipaste_2024-05-06_19-04-13.jpg"
-                    align="ringht">
-                <br>
-                <br>
-                <br>
-                <div style="float: left; " class="palutext2">
-                    攻击距离:1.8,基础攻击伤害为60,开启雷牙之咒(附雷)后伤害为90,武器附带三个技能分别是雷牙之咒、雷牙千斩和雷鸣腾跃。（）必须要手持武器才可释放</div>
-                <br>
-            </div>
-            <br>
-            <div class="text1">(2)雷魔官帽</div>
-            <br>
-            <img style="width: 100px;" src="./inger/lmgm.jpg" alt="">
-            <br>
-            <br>
-            <div class="palutext2">
-                增加4点的精神回复和30%的防水与30%的保护度，且自带一个可存放功能性帽子的格子，可放入，高礼帽、贝雷帽、牛角帽、猫帽、冬帽、雨帽、眼球伞，存放在魔官帽中的会与魔官帽的属性相叠加。
-            </div>
-            <br>
-            <br>
-            <div class="text1">(3)雷牙之咒(附雷)</div>
-            <br>
-            <img id="dongtu1" class="dongtu" src="" alt="">
-            <br>
-            <div class="palutext2">
-                须要点亮雷电附魔技能进行解锁，召唤一道闪电劈到枪尖上，来使武器发光，并强化武器的伤害及技能，该技能释放之后，会持续一段时间。在持续时间内，会为武器的普攻附加额外的30点伤害（由原本的60点增加到90点），如果攻击目标处于潮湿状态，该伤害会增加60点（即普攻对潮湿目标造成120点伤害）。技能持续期间内，雷法值会持续消耗，初始消耗速度为每秒6点，但可通过点亮魔力凝聚技能来减少雷法值的消耗（从每秒6点减到每秒3点），雷法值消耗完则技能自动停止，或者也可以同过按H键或者制作栏中的熄灭雷牙之咒来主动关闭。
-            </div>
-            <br>
-            <div class="text1">(4)雷牙千斩</div>
-            <br>
-            <img id="dongtu2" class="dongtu" src="" alt="">
-            <br>
-            <div class="palutext2">
-                手持武器灾厄雷牙右键触发。朝目标方向冲刺一段距离，并对所有经过的目标造成6次伤害，每次伤害为30点，消耗75雷法值，点亮聚能穿刺技能后伤害变为40且变为位面伤害，点亮魔耀斩击技能并击败终焉极蝶后额外增加40点位面伤害。点亮技能双雷破晓技能后，附雷状态下该技能得到强化，冲刺结束之后，会在经过的区域落下两道闪电，每道闪电造成100点伤害。
-            </div>
-            <br>
-            <div class="text1">(5)雷鸣腾跃</div>
-            <br>
-            <img id="dongtu3" class="dongtu" src="" alt="">
-            <br>
-            <div class="palutext2">
-                在装备栏右键武器图标，在短暂蓄力(初始为1.5秒可点亮魔雷之讯技能后可减少到两秒)后跃至空中4秒，随后可以降落至大范围内的指定位置，落地时造成200伤害(点亮音爆重击技能后可提升至300点伤害)
-                消耗75雷法。附雷状态下，落地时，召唤一道魔雷一同劈下，使命中的敌人麻痹三秒，无法行动。</div>
-            <br>
-            <div class="text1">(6)电光一闪</div>
-            <br>
-            <img id="dongtu4" class="dongtu" src="" alt="">
-            <img src="" alt="">
-            <br>
-            <div class="palutext2">
-                 通过C键释放，朝面向的方向冲刺一段距离，同时消耗20点雷法值，初始CD1秒点亮讯雷闪跃技能后可减少CD最多减少至无CD。如果释放过程中出现问题，可能是按键C绑定了其他功能，调整之后即可正常。</div>
-            <br>
-            <div class="text1">(7)洛亚之盈 </div>
-            <br>
-            <img class="dongtu" id="dongtu" src="" alt="">
-            <br>
-            <div class="palutext2"> 通过制作栏中的洛亚之盈来释放，获得飞行能力，无视体积碰撞，增加20%的移动速度。开启时持续消耗雷法值</div>
-        </div>
-    </div>
+
+
+<div class="bjt">
+	<div>
+		<h2 class="indextext">星卡mod介绍</h2>
+		<ul>
+			<div class="daohanglan1">
+				<li><a class="active" href="#home">主页</a></li>
+				<li><a href="#news">人物</a></li>
+				<li><a href="#contact">物品</a></li>
+				<li><a href="https://ziyu11221.github.io/re01-one/liaoli.html">食谱</a></li>
+				<li><a href="#about">boss</a></li>
+
+			</div>
+
+		</ul>
+	</div>
+    <div class="bjs">
+
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<div class="title"></div><img data-src="img/picture-1.jpg" data-srcset="img/picture-1-2x.jpg 2x"
+						class="swiper-lazy">
+					<div class="swiper-lazy-preloader"></div>
+				</div>
+				<div class="swiper-slide">
+					<div class="title"></div><img data-src="img/picture-2.jpg" data-srcset="img/picture-2-2x.jpg 2x"
+						class="swiper-lazy">
+					<div class="swiper-lazy-preloader"></div>
+				</div>
+				<div class="swiper-slide">
+					<div class="title"></div><img data-src="img/picture-3.jpg" data-srcset="img/picture-3-2x.jpg 2x"
+						class="swiper-lazy">
+					<div class="swiper-lazy-preloader"></div>
+				</div>
+				<div class="swiper-slide">
+					<div class="title"></div><img data-src="img/picture-4.jpg" data-srcset="img/picture-4-2x.jpg 2x"
+						class="swiper-lazy">
+					<div class="swiper-lazy-preloader"></div>
+				</div>
+				<div class="swiper-slide">
+					<div class="title"></div><img data-src="img/picture-5.jpg" data-srcset="img/picture-5-2x.jpg 2x"
+						class="swiper-lazy">
+					<div class="swiper-lazy-preloader"></div>
+				</div>
+				<div class="swiper-slide">
+					<div class="title"></div><img data-src="img/picture-6.jpg" data-srcset="img/picture-6-2x.jpg 2x"
+						class="swiper-lazy">
+					<div class="swiper-lazy-preloader"></div>
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+			<div class="swiper-button-prev"></div>
+			<div class="swiper-button-next"></div>
+		</div>
+		<br>
+		<br>
+		<div class="zz">
+			该mod由b站up <a title="点我前往up主页" style="text-decoration: none;"
+				href="https://space.bilibili.com/11278832?spm_id_from=333.337.search-card.all.click">灭吟弄月</a> 开发并上传
+		</div>
+	    <br>
+		<br>
+		<br>
+		<br>
+	<div class="bjst">
+		<div class="bjbox">
+			<div class="bjjs">
+				<img style="width: 100px;" src="./img/背景字.png" alt="">
+			</div>
+	
+			<div class="bjtext">所有的邪魔之心，均来自于魔神官海内司 也就是三魔官的主人
+				海内司的负能由魔法具象化，会对所接触的生物产生严重的影响
+				而随着那夜的到来，这些魔法产物随着异空间散播到了世界各处，甚至是异界
+				一切都是主人疯狂之时造成的，而现在三魔官来到异界，便是为了帮主人弥补犯下的过错</div>
+		</div>
+		<div class="lianjie">
+     
+        <div class="lianjie1"><a href="https://ziyu11221.github.io/re01-one/liaoli.html"><img style="width: 329px;height: 182px;" src="../inger/食谱.png" alt=""></a></div>
+        <div class="lianjie1"><a href=""><img style="width: 329px;height: 182px;" src="../inger/人物.png" alt=""></a></div>
+        <div class="lianjie1"><a href=""><img style="width: 329px;height: 182px;" src="../inger/物品.png" alt=""></a></div>
+        <div class="lianjie1"><a href=""><img style="width: 329px;height: 182px;" src="../inger/物品.png" alt=""></a></div>
+
+	
+		</div>
+	</div>
+   </div>
+</div>
+	<script src="js/swiper.min.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
+			speed: 700,
+			allowTouchMove: false,
+			lazy: {
+				loadPrevNext: true,
+				loadPrevNextAmount: 3,
+			},
+			centeredSlides: true,
+			spaceBetween: 50,
+			slidesOffsetBefore: 40,
+			loop: true,
+			slidesPerView: 'auto',
+			on: {
+				slideChangeTransitionEnd: function () {
+					this.slides.transition(this.params.autoplay.delay + this.params.speed).transform('translate3d(-60px, 0, 0)');
+				},
+				slideChangeTransitionStart: function () {
+					this.slides.transition(this.params.speed).transform('translate3d(0, 0, 0)');
+				},
+			},
+			pagination: {
+				el: '.swiper-pagination',
+				clickable: true,
+				renderBullet: function (index, className) {
+					return '<div class="' + className + '"><span></span><i></i></div>';
+				},
+			},
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+		window.onresize = function () {
+			swiper.update();
+		}
+	</script>
 </body>
-<script>
-    window.onload = function () {
-        document.getElementById("dongtu1").src = "./inger/ful.gif"
-        document.getElementById("dongtu2").src = "./inger/lyqz.gif"
-        document.getElementById("dongtu3").src = "./inger/lnty.gif"
-        document.getElementById("dongtu4").src = "./inger/dgys.gif"
-        document.getElementById("dongtu").src = "./inger/lyzy.gif"
-    }
-</script>
 
 </html>
