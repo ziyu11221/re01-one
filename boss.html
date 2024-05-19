@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星卡BOSS介绍</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .bigbox {
+        width: 100%;
+        height: 100%;
+        background: url(./inger/bjt.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        /* background-attachment: fixed; */
+        border-radius: 20px;
+    }
+
+    .box {
+        width: 1080px;
+        margin: auto;
+        margin-bottom: 20px;
+        margin-left: 300px;
+    }
+
+    a {
+        text-decoration: none;
+        width: 170px;
+        color: black;
+    }
+
+    .kuang {
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 960px;
+        border-radius: 5px;
+        margin-left: 20px;
+        height: 295.2px;
+    }
+
+    .ul1 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 1px solid #e7e7e7;
+        background-color: #f3f3f3;
+
+    }
+
+    .li1 {
+        float: left;
+        margin: auto;
+    }
+
+    .li1 a {
+        display: block;
+        color: #666;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        width: 100px;
+    }
+
+    .li1 a:hover:not(.active) {
+        background-color: #ddd;
+    }
+
+    .li1 a.active {
+        color: white;
+        background-color: #4CAF50;
+    }
+
+    .daohanglan1 {
+        width: 700px;
+        margin: auto;
+    }
+
+    .mdbox {
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        font-size: 30px;
+        text-align: center;
+        line-height: 50px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #00aaff;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #add8e6;
+
+    }
+
+    .ietm:hover {
+        background-color: #00ff7b;
+        color: white;
+    }
+
+    .mdbox1 {
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        background-color: #f3f3f3;
+        font-size: 25px;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+        background-color: #00aaff;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #add8e6;
+    }
+
+    .mdbox2 {
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+
+        font-size: 25px;
+        text-align: center;
+        line-height: 50px;
+        background-color: #00aaff;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #add8e6;
+    }
+
+    .list {
+        list-style: none;
+        padding-left: 0px;
+        background-color: #e3e3e3;
+        float: left;
+        width: 170px;
+        height: 100px;
+        display: none;
+        cursor: pointer;
+    }
+
+    .list1 {
+        list-style: none;
+        padding-left: 0px;
+        background-color: #e3e3e3;
+        float: left;
+        width: 170px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .list2 {
+        list-style: none;
+        padding-left: 0px;
+        background-color: #e3e3e3;
+        float: left;
+        width: 170px;
+        cursor: pointer;
+        display: none;
+    }
+
+    .ietm {
+        width: 200px;
+        height: 50px;
+        float: left;
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+        display: block;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #add8e6;
+        background-color: #c7ecff;
+    }
+
+    .ietm a {
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    .dingwei {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0px;
+        left: 0px;
+        border: none;
+        width: 200px;
+        height: 151px;
+    }
+
+    .dingwei1 {
+        position: absolute;
+        top: 50px;
+        width: 202px;
+        height: 7021px;
+        background-color: #e3e3e3;
+    }
+
+   
+
+    .BOSStext {
+        width: 500px;
+        height: 105.6px;
+        margin: auto;
+        color: rgb(229, 255, 0);
+        text-align: center;
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    .BOSStext1 {
+        font-size: 25px;
+        padding-bottom: 40px;
+        color: rgb(229, 255, 0);
+    }
+
+    .BOSStext2 {
+        position: relative;
+        font-size: 20px;
+    }
+
+    .BOSStext3 {
+        font-size: 18px;
+        margin-left: 40px;
+        width: 870px;
+    }
+
+    .kuang1 {
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 960px;
+        border-radius: 5px;
+        margin-left: 20px;
+
+    }
+</style>
+
+<body>
+
+    <div class="dingwei1">
+        <div class="dingwei">
+            <div style="cursor: pointer;font-size: 25px;" id="clickOpen" class="mdbox">
+                召唤 <i class="ziti iconfont icon-xiahua"></i>
+            </div>
+
+            <br>
+            <div>
+                <ul class="list">
+                    <li class="ietm"><a href="#a1">(1).触发</a></li>
+                    <li class="ietm"><a href="#a2">(2).难度选择</a></li>
+                </ul>
+            </div>
+
+            <div style="cursor: pointer;" id="clickOpen1" class="mdbox1">
+                数值 <i class="ziti iconfont icon-xiahua"></i>
+            </div>
+            <br>
+            <div>
+                <ul class="list1">
+                    <li class="ietm"><a href="#a3">(1).黄泉冥蝶</a></li>
+                    <li class="ietm"><a href="#a4">(2).终焉极蝶</a></li>
+                    <li class="ietm"><a style="padding: 0;" href="#a5">(3).归来的终焉极蝶</a></li>
+
+                </ul>
+            </div>
+
+            <div style="cursor: pointer;" id="clickOpen2" class="mdbox2">
+                技能 <i class="ziti iconfont icon-xiahua"></i>
+            </div>
+            <br>
+            <div>
+                <ul class="list2">
+                    <li class="ietm"><a href="#a6">(1).鬼火召唤</a></li>
+                    <li class="ietm"><a href="#a7">(2).幻影剑</a></li>
+                    <li class="ietm"><a href="#a8">(3).黄泉风暴</a></li>
+                    <li class="ietm"><a href="#a9">(4).黄泉梦锁</a></li>
+                    <li class="ietm"><a href="#a10">(5).极乐冥波</a></li>
+                    <li class="ietm"><a href="#a11">(6).心枪暴雨</a></li>
+                    <li class="ietm"><a href="#a12">(7).幻影剑阵</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="bigbox">
+        <ul class="ul1">
+            <div class="daohanglan1">
+                <li style="margin-left: 40px;" class="li1"><a href="https://ziyu11221.github.io/re01-one/">主页</a></li>
+                <li class="li1"><a href="#news">人物</a></li>
+                <li class="li1"><a href="#contact">物品</a></li>
+                <li class="li1"><a href="https://ziyu11221.github.io/re01-one/liaoli.html">食谱</a>
+                </li>
+                <li class="li1"><a class="active" href="#about">boss</a></li>
+            </div>
+        </ul>
+        <div class="box">
+            <div class="BOSStext">
+                <br>
+                星卡mod BOSS介绍
+            </div>
+            <div class="BOSStext1">
+                (一).召唤方法
+            </div>
+            <div class="kuang1">
+                <div class="BOSStext2">
+                  <div id="a1" style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">1.触发</div>   
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="BOSStext3">
+                        <img style="border-radius: 10px; width: 210px;" src="./inger/时巡使者.jpg" alt="">
+                        <br>
+                        <br>
+                        当被鬼火追杀至狂暴状态时，将引起【时巡使者】的注意
+                        隔天黄昏将会在随机玩家附近刷新（奇怪的梦蝶）梦蝶会在1分钟内消失，如果在消失前与其互动，将会开启BOSS战
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="kuang1">
+                <div class="BOSStext2">
+                    <div id="a2" style="font-size: 20px;padding-left: 20px;padding-top: 20px;padding-bottom: 10px; width: 200px;">2.难度选择(交互)</div> 
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="BOSStext3">
+                        <span style="color: rgb(0, 122, 28);">普通：在奇怪的梦蝶出现时攻击奇怪的梦蝶将会触发玩家将面对“黄泉冥蝶”(触发时将会马上进入BOSS战)</span>
+                        <br>
+                        <br>
+                        <span style="color: #00aaff;">困难：在奇怪的梦蝶出现时让其停留在身边10秒将会触发玩家将面对“终焉极蝶”(触发时将会马上进入BOSS战)</span>
+                        <br>
+                        <br>
+                        <span style="color: brown;">狂暴：在奇怪的梦蝶出现时给予心之枪将会触发玩家将面对“归来的终焉极蝶”(触发时“归来的终焉极蝶”将在下一天黄昏到来)</span>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <br>
+            <br>
+            <div class="BOSStext1">
+                <div style="font-size: 25px;padding-left: 20px;padding-top: 20px; width: 200px;">(二).BOSS数值与掉落 </div> 
+            </div>
+            <div class="kuang1">
+                <div class="BOSStext2">
+                   <div id="a3" style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">1.黄泉冥蝶</div>  
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="BOSStext3">
+                        <img style="width: 60px;" src="./inger/黄泉蝶.png" alt="">
+                        <br>
+                        <span style="color: brown;">血量：3500</span>
+                        <br>
+                        <br>
+                        <span style="color: #00aaff;">限制时间：90秒(未在限制时间内击杀将会直接消失)</span>
+                        <br>
+                        <br>
+                        <span style="color: rgb(0, 122, 28);">掉落物：死亡后将掉落1幻尘瓶并有5%的几率开启绯红裂隙</span>
+                        <br>
+                        <br>
+                        特殊效果:魔官角色在蝶周围时位移将会增加蓝耗，帕噜电光一闪增加至60，基斯开启冰魅时受到伤害蓝耗增加至40
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="kuang1">
+                <div class="BOSStext2">
+                <div id="a4" style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;"> 2.终焉极蝶</div>  
+                   
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="BOSStext3">
+                        <img style="width: 60px;" src="./inger/黄泉蝶.png" alt="">
+                        <br>
+                        <span style="color: brown;">血量：12000</span>
+                        <br>
+                        <br>
+                        <span style="color: #00aaff;">限制时间：210秒(未在限制时间内击杀将会直接消失)</span>
+                        <br>
+                        <br>
+                        <span style="color: rgb(0, 122, 28);">掉落物：死亡后将掉落1幻尘瓶并有20%的几率开启绯红裂隙</span>
+                        <br>
+                        <br>
+                        特殊效果:魔官角色在蝶周围时位移将会增加蓝耗，帕噜电光一闪增加至60，基斯开启冰魅时受到伤害蓝耗增加至40
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="kuang1">
+                <div class="BOSStext2">
+                    <div id="a5" style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">3.归来的终焉极蝶</div>  
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="BOSStext3">
+                        <img style="width: 60px;" src="./inger/归来的终焉蝶.png" alt="">
+                        <br>
+                        <span style="color: brown;">血量：15000</span>
+                        <br>
+                        <br>
+                        <span style="color: #00aaff;">限制时间：234秒(未在限制时间内击杀将会直接消失)</span>
+                        <br>
+                        <br>
+                        <span style="color: rgb(0, 122, 28);">掉落物：死亡后将掉落4幻尘瓶并有50%的几率开启绯红裂隙</span>
+                        <br>
+                        <br>
+                        特殊效果:魔官角色在蝶周围时位移将会增加蓝耗，帕噜电光一闪增加至60，基斯开启冰魅时受到伤害蓝耗增加至40
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="BOSStext1">
+                (三).技能
+            </div>
+            <div class="kuang1">
+                <div class="BOSStext2">
+                    <div id="a6" style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">1.鬼火召唤</div>  
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="BOSStext3">
+                        <img style="width: 450px;" src="./inger/召唤鬼火.gif" alt="">
+                        <span style="display: block; margin-bottom: 10px; color: #00aaff;">冷却时间：35秒</span>
+
+                        <span style="display: block; margin-bottom: 10px; color: rgb(0, 122, 28);">真空期：5秒</span>
+                        <span style="float: left;height: 217px;">描述：</span>
+                        <span style="color: brown;">简单：冥蝶围绕玩家召唤 2
+                            个空间裂口，并从中召唤黄泉鬼火（每多一个玩家会额外生成两个裂口），鬼火会追猎周围的玩家，造成100点接触伤害，8秒后鬼火消失
+                            <br>
+                            <br>
+                            困难：冥蝶围绕玩家召唤 1 个空间裂口，并从中召唤 “鬼火—遗忘”，"遗忘"会高速跟随附近的玩家，造成100点接触伤害
+                            “鬼火—遗忘”被召唤5秒后，会发出一声心灵尖吼，对一定距离内的所有的玩家造成减速效果，并暂时封印魔官的位移技能 随后，
+                            “鬼火—遗忘”会停止移动，并引发一阵逐渐扩大的负能量爆炸，爆炸持续5秒，区域内的玩家会收到每秒100点伤害，非玩家生物伤害加倍
+                            <br>
+                            <br>
+                            狂暴：冥蝶围绕玩家召唤 2 个空间裂口，并从中召唤 “鬼火—遗忘”，被“鬼火—遗忘”的心灵尖吼同时命中会导致玩家直接昏迷</span>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="kuang1">
+                <div class="BOSStext2">
+                   <div id="a7" style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">2.幻影剑</div>  
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="BOSStext3">
+                       <img style="width: 450px;" src="./inger/幻影剑.gif" alt="">
+                        <br>
+                        <span style="display: block; margin-bottom: 10px; color: #00aaff;">冷却时间：35秒</span>
+
+                        <span style="display: block; margin-bottom: 10px; color: rgb(0, 122, 28);">真空期：8秒</span>
+                        <span style="float: left;height: 145px;">描述：</span>
+                        <span
+                            style="color: brown;">简单：冥蝶在一个玩家附近生成【金色幻影剑组】，每组共5把金色幻影剑（剑组中间的幻影剑永远对准玩家生成），金色幻影剑会在生成后0.9秒发射，造成每0.1秒150点伤害（若在发射中命中，基本只会判定一次）
+                            每轮攻击共生成4组金色幻影剑，生成间隔为1.5秒
+                            <br>
+                            <br>
+                            困难-狂暴：冥蝶在一个玩家附近同时生成【金色幻影剑组】与【紫色幻影剑组】，与金色剑组不同的是，紫色剑组的五把剑全都会对准玩家生成
+                            金色幻影剑造成150伤害，发射延迟0.9秒，生成间隔2秒，共5组
+                            紫色幻影剑组造成50伤害，发射延迟0.4秒，生成间隔3秒，共4组
+
+                        </span>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="kuang1">
+                <div class="BOSStext2">
+                   <div id="a8" style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">3.黄泉风暴</div> 
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="BOSStext3">
+                        <img style="width: 450px;" src="./inger/黄泉风暴.gif" alt="">
+                        <span style="display: block; margin-bottom: 10px; color: #00aaff;">冷却时间：35秒</span>
+
+                        <span style="display: block; margin-bottom: 10px; color: rgb(0, 122, 28);">真空期：8秒</span>
+                        <span style="float: left;height: 145px;">描述：</span>
+                        <span style="color: brown;">简单：冥蝶在短暂的蓄力后，召唤三个逐渐扩散的火焰旋风，旋风会造成100点接触伤害与击飞效果，同时会点燃周围的物体和玩家
+                            旋风扩散至最大半径后会消失
+                            <br>
+                            <br>
+                            困难-狂暴：召唤的风暴数量变为6个，且伤害变为50点位面伤害
+                            旋风在扩大至最大半径后，会在最大半径处继续环绕三秒，随后每个旋风都会生成一片火焰地带，并快速返回至冥蝶处
+                            若玩家在旋风返回时处于冥蝶旁，有很大的概率会被六道旋风直接斩杀
+                        </span>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="kuang1">
+                <div class="BOSStext2">
+                    <div id="a9" style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">4.黄泉梦锁</div>  
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="BOSStext3">
+                        <img style="width: 450px;" src="./inger/黄泉梦锁.gif" alt="">
+                        <span style="display: block; margin-bottom: 10px; color: #00aaff;">冷却时间：25秒</span>
+
+                        <span style="display: block; margin-bottom: 10px; color: rgb(0, 122, 28);">真空期：6秒</span>
+                        <span style="float: left;height: 145px;">描述：</span>
+                        <span style="color: brown;">
+                            简单：冥蝶召唤一道持续几秒的地涌影火，追踪附近的玩家（每个玩家会额外生成一道影火）
+                            被影火命中的玩家，会受到5次法力伤害，使有魔力值的角色每次扣除40点法力值
+                            若角色不存在法力值或法力不足40，则直接扣除30点生命值
+                            此技能会导致非魔官角色被命中后直接扣除150点生命值，如果没有回血物品，这些无视护甲的伤害会快速导致角色死亡
+                            <br>
+                            <br>
+                            困难-狂暴：召唤的地涌影火数量变为2道（跟随玩家数量翻倍）
+                        </span>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="kuang1">
+                <div class="BOSStext2">
+                    <div id="a10" style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">5.极乐冥波</div>
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="BOSStext3">
+                        <img style="width: 450px;" src="./inger/极乐冥波.gif" alt="">
+                        <span style="display: block; margin-bottom: 10px; color: #00aaff;">冷却时间：35秒</span>
+
+                        <span style="display: block; margin-bottom: 10px; color: rgb(0, 122, 28);">真空期：9秒</span>
+                        <span style="float: left;height: 145px;">描述：</span>
+                        <span style="color: brown;">
+                            
+                            在技能冷却期间，若玩家靠近冥蝶，则会使其进入短暂的冥波蓄力动作，前摇结束后，冥蝶会释放一阵【极乐冥波】对周围 4 距离内的玩家造成100点伤害
+                            被冥波命中的玩家会进入困倦状态，几秒内降低移速
+                            此技能为 黄泉冥蝶 独有，属于独立于其他技能的近战攻击
+                            <br>
+                            <br>
+                            终焉虫鸣：冥蝶短暂消失，随后重现在玩家附近并快速释放一道【极乐冥波】，随后重复以上动作
+                            一组终焉虫鸣会重复释放 5 次冥波，若三秒内受到两次冥波的伤害，会导致玩家直接进入昏迷状态
+                            此技能为【困难】与【狂暴】难度独有
+                        </span>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="kuang1">
+                <div class="BOSStext2">
+                    <div id="a11" style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">6.心枪暴雨</div>  
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="BOSStext3">
+                        <img style="width: 450px;" src="./inger/心枪暴雨.gif" alt="">
+                        <span style="display: block; margin-bottom: 10px; color: #00aaff;">冷却时间：30秒</span>
+
+                        <span style="display: block; margin-bottom: 10px; color: rgb(0, 122, 28);">真空期：6秒</span>
+                        <span style="float: left;height: 145px;">描述：</span>
+                        <span style="color: brown;">
+                            冥蝶在3秒内于自身周围快速召唤16根心之枪，每根心之枪在生成2秒后会消失，并在玩家附近降落
+                            心枪的落点位置并不固定，可能的位置有：玩家当前位置、玩家附近区域、玩家行进方向上
+                            被心之枪命中的玩家会受到100点位面伤害
+                            该技能会对每个玩家额外生成一组心之枪（多一个人多一根枪）
+                            此技能为【归来的终焉极蝶】独有
+                        </span>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="kuang1">
+                <div class="BOSStext2">
+                    <div id="a12" style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">7.幻影剑阵</div>  
+                   
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="BOSStext3">
+                        <img style="width: 450px;" src="./inger/幻影剑阵.gif" alt="">
+                        <br>
+                        <span style="display: block; margin-bottom: 10px; color: #00aaff;">冷却时间：30秒</span>
+
+                        <span style="display: block; margin-bottom: 10px; color: rgb(0, 122, 28);">真空期：6秒</span>
+                        <span style="float: left;height: 145px;">描述：</span>
+                        <span style="color: brown;">
+                            冥蝶召唤一整圈紫色幻影剑环绕玩家，1.2秒后朝中心发射，狂暴幻影剑阵共30把，每把剑造成100接触伤害
+                            此技能在【归来的终焉极蝶】的战斗中，与正常的【幻影剑】互为独立技能，即狂暴蝶同时拥有两个版本的幻影剑技能，但只会单独释放其中一个
+                            <br>
+                            此技能为【归来的终焉极蝶】独有
+                        </span>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+
+
+        </div>
+    </div>
+</body>
+<script>
+    var clickBth = document.getElementById('clickOpen')
+    var clickBth1 = document.getElementById('clickOpen1')
+    var clickBth2 = document.getElementById('clickOpen2')
+    var list = document.getElementsByClassName('list')[0];
+    var list1 = document.getElementsByClassName('list1')[0];
+    var list2 = document.getElementsByClassName('list2')[0];
+    var isOpen = false;
+    clickBth.addEventListener('click', function () {
+        isOpen = !isOpen;
+        if (isOpen) {
+            list.style.display = 'inline-block';
+        }
+        else {
+            list.style.display = 'none';
+        }
+    })
+
+    var isOpen1 = false;
+
+    clickBth1.addEventListener('click', function () {
+        isOpen1 = !isOpen1;
+        if (isOpen1) {
+            list1.style.display = 'inline-block';
+        }
+        else {
+            list1.style.display = 'none';
+        }
+    })
+    var isOpen2 = false;
+
+    clickBth2.addEventListener('click', function () {
+        isOpen2 = !isOpen2;
+        if (isOpen2) {
+            list2.style.display = 'inline-block';
+        }
+        else {
+            list2.style.display = 'none';
+        }
+    })   
+</script>
+
+</html>
