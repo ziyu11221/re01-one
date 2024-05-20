@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>星卡BOSS介绍</title>
+    <title>星卡料理介绍</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/c/font_4380951_gurv3kcz5vo.css">
 </head>
 <style>
     html {
@@ -14,6 +15,7 @@
     * {
         padding: 0;
         margin: 0;
+        box-sizing: border-box;
     }
 
     .bigbox {
@@ -35,56 +37,35 @@
         margin-left: 300px;
     }
 
-    a {
-        text-decoration: none;
-        width: 170px;
-        color: black;
-    }
-
-    .kuang {
-        background-color: rgba(255, 255, 255, 0.9);
-        width: 960px;
-        border-radius: 5px;
-        margin-left: 20px;
-        height: 295.2px;
-    }
-
-    .ul1 {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        border: 1px solid #e7e7e7;
-        background-color: #f3f3f3;
-
-    }
-
-    .li1 {
-        float: left;
+    .liaoli {
         margin: auto;
-    }
-
-    .li1 a {
-        display: block;
-        color: #666;
+        width: 500px;
         text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        width: 100px;
+        /* margin-top: 50px; */
+        font-size: 40px;
+        margin-bottom: 20px;
     }
 
-    .li1 a:hover:not(.active) {
-        background-color: #ddd;
+    .liaolitext {
+        font-size: 25px;
+        margin-bottom: 40px;
     }
 
-    .li1 a.active {
-        color: white;
-        background-color: #4CAF50;
+    .liaolitext1 {
+        font-size: 20px;
+        position: relative;
+        padding-left: 40px;
+        padding-bottom: 20px;
     }
 
-    .daohanglan1 {
-        width: 700px;
-        margin: auto;
+    .liaolitext2 {
+        font-size: 17px;
+        margin-bottom: 20px;
+        margin-left: 40px;
+    }
+
+    .liaolitu {
+        width: 150px;
     }
 
     .mdbox {
@@ -128,7 +109,7 @@
         display: inline-block;
         width: 200px;
         height: 50px;
-
+      
         font-size: 25px;
         text-align: center;
         line-height: 50px;
@@ -191,451 +172,1115 @@
 
     .dingwei {
         position: sticky;
-        position: -webkit-sticky;
+        position: -webkit-sticky; 
         top: 0px;
         left: 0px;
         border: none;
         width: 200px;
         height: 151px;
+        
     }
-
-    .dingwei1 {
+    .dingwei1{
         position: absolute;
         top: 50px;
         width: 202px;
-        height: 4897px;
+        height: 9261px;
         background-color: #e3e3e3;
     }
+    tr {
+        display: table-row;
+        vertical-align: inherit;
+        unicode-bidi: isolate;
+        border-color: inherit;
+    }
 
+    th {
+        border-top: 1px solid #000000;
+        border-left: 1px solid #000000;
+        padding: 5px;
+        /* border-right: 1px solid #ccc; */
+        position: absolute;
+        top: -22px;
+    }
 
-
-    .BOSStext {
-        width: 500px;
-        height: 105.6px;
-        margin: auto;
-        color: rgb(229, 255, 0);
+    td {
+        border-top: 1px solid #000000;
+        border-left: 1px solid #000000;
+        /* padding: 5px; */
+        border-bottom: 1px solid #000000;
+        /* border-right: 1px solid #ccc; */
+        display: table-cell;
+        vertical-align: inherit;
+        unicode-bidi: isolate;
+        width: 45px;
         text-align: center;
-        font-size: 45px;
-        margin-bottom: 20px;
+        height: 33.2px;
+        font-size: 13px;
+
     }
 
-    .BOSStext1 {
-        font-size: 25px;
-        padding-bottom: 40px;
-        color: rgb(229, 255, 0);
+    table {
+        border-spacing: 0;
+        max-width: 100%;
+        overflow: auto;
+        margin: 10px 0;
     }
 
-    .BOSStext2 {
+    thead {
+        display: table-header-group;
+        vertical-align: middle;
+        unicode-bidi: isolate;
+        border-color: inherit;
+
+    }
+
+    .a1 {
         position: relative;
-        font-size: 20px;
+        top: 0;
     }
 
-    .BOSStext3 {
-        font-size: 18px;
-        margin-left: 40px;
-        width: 870px;
+    a {
+        text-decoration: none;
+        width: 170px;
+        color: black;
     }
 
-    .kuang1 {
+    .kuang {
         background-color: rgba(255, 255, 255, 0.9);
         width: 960px;
         border-radius: 5px;
         margin-left: 20px;
+    }
 
+    .ul1 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 1px solid #e7e7e7;
+        background-color: #f3f3f3;
+
+    }
+
+    .li1 {
+        float: left;
+        margin: auto;
+    }
+
+    .li1 a {
+        display: block;
+        color: #666;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        width: 100px;
+    }
+
+    .li1 a:hover:not(.active) {
+        background-color: #ddd;
+    }
+
+    .li1 a.active {
+        color: white;
+        background-color: #4CAF50;
+    }
+
+    .daohanglan1 {
+        width: 700px;
+        margin: auto;
     }
 </style>
 
 <body>
+<div class="dingwei1">
+    <div class="dingwei">
+        <div style="cursor: pointer;font-size: 25px;" id="clickOpen" class="mdbox">
+            食材 <i class="ziti iconfont icon-xiahua"></i>
+        </div>
 
-    <div class="dingwei1">
-        <div class="dingwei">
-            <div style="cursor: pointer;font-size: 25px;" id="clickOpen" class="mdbox">
-                召唤 <i class="ziti iconfont icon-xiahua"></i>
-            </div>
+        <br>
+        <div>
+            <ul class="list">
+                <li class="ietm"><a href="#a1">(1).粮袋</a></li>
+                <li class="ietm"><a href="#a2">(2).奶油</a></li>
+            </ul>
+        </div>
 
-            <br>
-            <div>
-                <ul class="list">
-                    <li class="ietm"><a href="#a1">(1).触发</a></li>
-                    <li class="ietm"><a href="#a2">(2).难度选择</a></li>
-                </ul>
-            </div>
+        <div style="cursor: pointer;" id="clickOpen1" class="mdbox1">
+            料理 <i class="ziti iconfont icon-xiahua"></i>
+        </div>
+        <br>
+        <div>
+            <ul class="list1">
+                <li class="ietm"><a href="#a3">(1).蛋包饭</a></li>
+                <li class="ietm"><a href="#a4">(2).憨八嘎</a></li>
+                <li class="ietm"><a href="#a5">(3).拔丝萝卜脆</a></li>
+                <li class="ietm"><a href="#a6">(4).鱼香盛宴</a></li>
+                <li class="ietm"><a href="#a7">(5).红烩猫猫鱼</a></li>
+                <li class="ietm"><a href="#a8">(6).榴莲刺刺酥</a></li>
 
-            <div style="cursor: pointer;" id="clickOpen1" class="mdbox1">
-                数值 <i class="ziti iconfont icon-xiahua"></i>
-            </div>
-            <br>
-            <div>
-                <ul class="list1">
-                    <li class="ietm"><a href="#a3">(1).黄泉冥蝶</a></li>
-                    <li class="ietm"><a href="#a4">(2).终焉极蝶</a></li>
-                    <li class="ietm"><a style="padding: 0;" href="#a5">(3).归来的终焉极蝶</a></li>
+            </ul>
+        </div>
 
-                </ul>
-            </div>
+        <div style="cursor: pointer;" id="clickOpen2" class="mdbox2">
+            buff类料理 <i class="ziti iconfont icon-xiahua"></i>
+        </div>
+        <br>
+        <div>
+            <ul class="list2">
+                <li class="ietm"><a href="#a9">(1)."我创死你"</a></li>
+                <li class="ietm"><a href="#a10">(2).宝石苹果冰沙</a></li>
+                <li class="ietm"><a href="#a11">(3).咖喱烩面</a></li>
+                <li class="ietm"><a href="#a12">(4).雪顶苏打</a></li>
+                <li class="ietm"><a href="#a13">(5).焦糖布丁</a></li>
+                <li class="ietm"><a href="#a14">(6).蒜蓉鲜蛤汤</a></li>
+                <li class="ietm"><a href="#a15">(7).红霜雪糕</a></li>
+                <li class="ietm"><a href="#a16">(8).冰镇大西瓜</a></li>
+                <li class="ietm"><a href="#a17">(9).鸳鸯锅</a></li>
+                <li class="ietm"><a href="#a18">(10).蜘蛛网炒树</a></li>
+                <li class="ietm"><a href="#a19">(11).红烧蛙镜鱼</a></li>
 
-            <div style="cursor: pointer;" id="clickOpen2" class="mdbox2">
-                技能 <i class="ziti iconfont icon-xiahua"></i>
-            </div>
-            <br>
-            <div>
-                <ul class="list2">
-                    <li class="ietm"><a href="#a6">(1).鬼火召唤</a></li>
-                    <li class="ietm"><a href="#a7">(2).幻影剑</a></li>
-                    <li class="ietm"><a href="#a8">(3).黄泉风暴</a></li>
-                    <li class="ietm"><a href="#a9">(4).黄泉梦锁</a></li>
-                    <li class="ietm"><a href="#a10">(5).极乐冥波</a></li>
-                    <li class="ietm"><a href="#a11">(6).心枪暴雨</a></li>
-                    <li class="ietm"><a href="#a12">(7).幻影剑阵</a></li>
-                </ul>
-            </div>
+            </ul>
         </div>
     </div>
-
+</div>
     <div class="bigbox">
+
         <ul class="ul1">
             <div class="daohanglan1">
-                <li style="margin-left: 40px;" class="li1"><a href="https://ziyu11221.github.io/re01-one/">主页</a></li>
+                <li style="margin-left: 40px;" class="li1"><a href="#home">主页</a></li>
                 <li class="li1"><a href="#news">人物</a></li>
                 <li class="li1"><a href="#contact">物品</a></li>
-                <li class="li1"><a href="https://ziyu11221.github.io/re01-one/liaoli.html">食谱</a>
-                </li>
-                <li class="li1"><a class="active" href="#about">boss</a></li>
+                <li class="li1"><a class="active" href="https://ziyu11221.github.io/re01-one/liaoli.html">食谱</a></li>
+                <li class="li1"><a href="https://ziyu11221.github.io/re01-one/boss">boss</a></li>
             </div>
         </ul>
         <div class="box">
-            <div class="BOSStext">
+
+            <div style="color: aliceblue;" class="liaoli">
                 <br>
-                星卡mod BOSS介绍
+                星卡mod专属料理介绍
             </div>
-            <div class="BOSStext1">
-                (一).召唤方法
+
+            <div style="color: aliceblue;" class="liaolitext">
+                (一)食材 （可在精炼材料与烹饪两个制作栏位制作）
             </div>
-            <div class="kuang1">
-                <div class="BOSStext2">
-                    <div id="a1"
-                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
-                        1.触发</div>
-                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+
+            <div class="kuang">
+                <div style="position: relative; padding-left: 40px;padding-bottom: 20px;" id="a1" class="liaolitext1">
+                <div  style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">(1).粮袋</div> 
+                
+                    <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
                     <br>
-                    <div class="BOSStext3">
-                        <img style="border-radius: 10px; width: 210px;" src="./inger/时巡使者.jpg" alt="">
-                        <br>
-                        <br>
-                        当被鬼火追杀至狂暴状态时，将引起【时巡使者】的注意
-                        隔天黄昏将会在随机玩家附近刷新（奇怪的梦蝶）梦蝶会在1分钟内消失，如果在消失前与其互动，将会开启BOSS战
-                    </div>
-                    <br>
+                    <img class="liaolitu" src="./inger/liangdai.jpg" alt="">
                 </div>
-            </div>
-            <br>
-            <br>
-            <div class="kuang1">
-                <div class="BOSStext2">
-                    <div id="a2"
-                        style="font-size: 20px;padding-left: 20px;padding-top: 20px;padding-bottom: 10px; width: 200px;">
-                        2.难度选择(交互)</div>
-                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
-                    <br>
-                    <div class="BOSStext3">
-                        <span style="color: rgb(0, 122, 28);">普通：在奇怪的梦蝶出现时攻击奇怪的梦蝶将会触发玩家将面对“黄泉冥蝶”(触发时将会马上进入BOSS战)</span>
+                <div style="margin-left: 0px;" class="liaolitext2">
+
+                    <div style="margin-left: 40px;">
+                        配方：使用玉米制作,消耗三个玉米
                         <br>
-                        <br>
-                        <span style="color: #00aaff;">困难：在奇怪的梦蝶出现时让其停留在身边10秒将会触发玩家将面对“终焉极蝶”(触发时将会马上进入BOSS战)</span>
-                        <br>
-                        <br>
-                        <span style="color: brown;">狂暴：在奇怪的梦蝶出现时给予心之枪将会触发玩家将面对“归来的终焉极蝶”(触发时“归来的终焉极蝶”将在下一天黄昏到来)</span>
+                        描述：一次制作两份不会腐烂,用于烹饪时可提供1点菜度，也可直接食用
                     </div>
+
+                    <!-- <div style="margin-top: 10px;">
+                    饱食度：<span style="color: forestgreen;">+25</span>
+                    <br>
+                    理智值：<span style="color: brown;">- 50</span>
+                    <br>
+                    生命值：<span style="color: brown;">- 3</span>
+                </div> -->
+                    <br>
+                    <div style="margin-left: 40px;" class="a1">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>饱食</th>
+                                    <th style="padding-right: 5px; left: 45px;">理智</th>
+                                    <th style="left: 90px;border-right: 1px solid #000000;">生命</th>
+                                </tr>
+                            </thead>
+                        </table>
+                        <table>
+                    </div>
+
                 </div>
+                <thead>
+                    <tr>
+                        <td><span style="color: forestgreen;">+25</span></td>
+                        <td><span style=" color: brown;">- 50</span></td>
+                        <td style="width: 45.28px; border-right: 1px solid #000000;"><span style="color: brown;">-
+                                3</span></td>
+                    </tr>
+                </thead>
+                </table>
                 <br>
             </div>
-            <br>
-            <br>
-            <div class="BOSStext1">
-                <div style="font-size: 25px;padding-left: 20px;padding-top: 20px; width: 238px;">(二).BOSS数值与掉落 </div>
-            </div>
-            <div class="kuang1">
-                <div class="BOSStext2">
-                    <div id="a3"
-                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
-                        1.黄泉冥蝶</div>
-                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
-                    <br>
-                    <div class="BOSStext3">
-                        <img style="width: 60px;" src="./inger/黄泉蝶.png" alt="">
-                        <br>
-                        <span style="color: brown;">血量：3500</span>
-                        <br>
-                        <br>
-                        <span style="color: #00aaff;">限制时间：90秒(未在限制时间内击杀将会直接消失)</span>
-                        <br>
-                        <br>
-                        <span style="color: rgb(0, 122, 28);">掉落物：死亡后将掉落1幻尘瓶并有5%的几率开启绯红裂隙</span>
-                        <br>
-                        <br>
-                        特殊效果:魔官角色在蝶周围时位移将会增加蓝耗，帕噜电光一闪增加至60，基斯开启冰魅时受到伤害蓝耗增加至40
-                    </div>
-                    <br>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="kuang1">
-                <div class="BOSStext2">
-                    <div id="a4"
-                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
-                        2.终焉极蝶</div>
-
-                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
-                    <br>
-                    <div class="BOSStext3">
-                        <img style="width: 60px;" src="./inger/黄泉蝶.png" alt="">
-                        <br>
-                        <span style="color: brown;">血量：12000</span>
-                        <br>
-                        <br>
-                        <span style="color: #00aaff;">限制时间：210秒(未在限制时间内击杀将会直接消失)</span>
-                        <br>
-                        <br>
-                        <span style="color: rgb(0, 122, 28);">掉落物：死亡后将掉落1幻尘瓶并有20%的几率开启绯红裂隙</span>
-                        <br>
-                        <br>
-                        特殊效果:魔官角色在蝶周围时位移将会增加蓝耗，帕噜电光一闪增加至60，基斯开启冰魅时受到伤害蓝耗增加至40
-                    </div>
-                    <br>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="kuang1">
-                <div class="BOSStext2">
-                    <div id="a5"
-                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
-                        3.归来的终焉极蝶</div>
-                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
-                    <br>
-                    <div class="BOSStext3">
-                        <img style="width: 60px;" src="./inger/归来的终焉蝶.png" alt="">
-                        <br>
-                        <span style="color: brown;">血量：15000</span>
-                        <br>
-                        <br>
-                        <span style="color: #00aaff;">限制时间：234秒(未在限制时间内击杀将会直接消失)</span>
-                        <br>
-                        <br>
-                        <span style="color: rgb(0, 122, 28);">掉落物：死亡后将掉落4幻尘瓶并有50%的几率开启绯红裂隙</span>
-                        <br>
-                        <br>
-                        特殊效果:魔官角色在蝶周围时位移将会增加蓝耗，帕噜电光一闪增加至60，基斯开启冰魅时受到伤害蓝耗增加至40
-                    </div>
-                    <br>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="BOSStext1">
-                (三).技能
-            </div>
-            <div class="kuang1">
-                <div class="BOSStext2">
-                    <div id="a6"
-                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
-                        1.鬼火召唤</div>
-                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
-                    <br>
-                    <div class="BOSStext3">
-                    
-                        <span style="display: block; margin-bottom: 10px; color: #00aaff;">冷却时间：35秒</span>
-
-                        <span style="display: block; margin-bottom: 10px; color: rgb(0, 122, 28);">真空期：5秒</span>
-                        <span style="float: left;height: 217px;">描述：</span>
-                        <span style="color: brown;">简单：冥蝶围绕玩家召唤 2
-                            个空间裂口，并从中召唤黄泉鬼火（每多一个玩家会额外生成两个裂口），鬼火会追猎周围的玩家，造成100点接触伤害，8秒后鬼火消失
-                            <br>
-                            <br>
-                            困难：冥蝶围绕玩家召唤 1 个空间裂口，并从中召唤 “鬼火—遗忘”，"遗忘"会高速跟随附近的玩家，造成100点接触伤害
-                            “鬼火—遗忘”被召唤5秒后，会发出一声心灵尖吼，对一定距离内的所有的玩家造成减速效果，并暂时封印魔官的位移技能 随后，
-                            “鬼火—遗忘”会停止移动，并引发一阵逐渐扩大的负能量爆炸，爆炸持续5秒，区域内的玩家会收到每秒100点伤害，非玩家生物伤害加倍
-                            <br>
-                            <br>
-                            狂暴：冥蝶围绕玩家召唤 2 个空间裂口，并从中召唤 “鬼火—遗忘”，被“鬼火—遗忘”的心灵尖吼同时命中会导致玩家直接昏迷</span>
-                    </div>
-                    <br>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="kuang1">
-                <div class="BOSStext2">
-                    <div id="a7"
-                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
-                        2.幻影剑</div>
-                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
-                    <br>
-                    <div class="BOSStext3">
-
-                        <br>
-                        <span style="display: block; margin-bottom: 10px; color: #00aaff;">冷却时间：35秒</span>
-
-                        <span style="display: block; margin-bottom: 10px; color: rgb(0, 122, 28);">真空期：8秒</span>
-                        <span style="float: left;height: 145px;">描述：</span>
-                        <span
-                            style="color: brown;">简单：冥蝶在一个玩家附近生成【金色幻影剑组】，每组共5把金色幻影剑（剑组中间的幻影剑永远对准玩家生成），金色幻影剑会在生成后0.9秒发射，造成每0.1秒150点伤害（若在发射中命中，基本只会判定一次）
-                            每轮攻击共生成4组金色幻影剑，生成间隔为1.5秒
-                            <br>
-                            <br>
-                            困难-狂暴：冥蝶在一个玩家附近同时生成【金色幻影剑组】与【紫色幻影剑组】，与金色剑组不同的是，紫色剑组的五把剑全都会对准玩家生成
-                            金色幻影剑造成150伤害，发射延迟0.9秒，生成间隔2秒，共5组
-                            紫色幻影剑组造成50伤害，发射延迟0.4秒，生成间隔3秒，共4组
-
-                        </span>
-                    </div>
-                    <br>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="kuang1">
-                <div class="BOSStext2">
-                    <div id="a8"
-                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
-                        3.黄泉风暴</div>
-                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
-                    <br>
-                    <div class="BOSStext3">
-
-                        <span style="display: block; margin-bottom: 10px; color: #00aaff;">冷却时间：35秒</span>
-
-                        <span style="display: block; margin-bottom: 10px; color: rgb(0, 122, 28);">真空期：8秒</span>
-                        <span style="float: left;height: 145px;">描述：</span>
-                        <span style="color: brown;">简单：冥蝶在短暂的蓄力后，召唤三个逐渐扩散的火焰旋风，旋风会造成100点接触伤害与击飞效果，同时会点燃周围的物体和玩家
-                            旋风扩散至最大半径后会消失
-                            <br>
-                            <br>
-                            困难-狂暴：召唤的风暴数量变为6个，且伤害变为50点位面伤害
-                            旋风在扩大至最大半径后，会在最大半径处继续环绕三秒，随后每个旋风都会生成一片火焰地带，并快速返回至冥蝶处
-                            若玩家在旋风返回时处于冥蝶旁，有很大的概率会被六道旋风直接斩杀
-                        </span>
-                    </div>
-                    <br>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="kuang1">
-                <div class="BOSStext2">
-                    <div id="a9"
-                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
-                        4.黄泉梦锁</div>
-                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
-                    <br>
-                    <div class="BOSStext3">
-
-                        <span style="display: block; margin-bottom: 10px; color: #00aaff;">冷却时间：25秒</span>
-
-                        <span style="display: block; margin-bottom: 10px; color: rgb(0, 122, 28);">真空期：6秒</span>
-                        <span style="float: left;height: 145px;">描述：</span>
-                        <span style="color: brown;">
-                            简单：冥蝶召唤一道持续几秒的地涌影火，追踪附近的玩家（每个玩家会额外生成一道影火）
-                            被影火命中的玩家，会受到5次法力伤害，使有魔力值的角色每次扣除40点法力值
-                            若角色不存在法力值或法力不足40，则直接扣除30点生命值
-                            此技能会导致非魔官角色被命中后直接扣除150点生命值，如果没有回血物品，这些无视护甲的伤害会快速导致角色死亡
-                            <br>
-                            <br>
-                            困难-狂暴：召唤的地涌影火数量变为2道（跟随玩家数量翻倍）
-                        </span>
-                    </div>
-                    <br>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="kuang1">
-                <div class="BOSStext2">
-                    <div id="a10"
-                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
-                        5.极乐冥波</div>
-                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
-                    <br>
-                    <div class="BOSStext3">
-
-                        <span style="display: block; margin-bottom: 10px; color: #00aaff;">冷却时间：35秒</span>
-
-                        <span style="display: block; margin-bottom: 10px; color: rgb(0, 122, 28);">真空期：9秒</span>
-                        <span style="float: left;height: 145px;">描述：</span>
-                        <span style="color: brown;">
-
-                            在技能冷却期间，若玩家靠近冥蝶，则会使其进入短暂的冥波蓄力动作，前摇结束后，冥蝶会释放一阵【极乐冥波】对周围 4 距离内的玩家造成100点伤害
-                            被冥波命中的玩家会进入困倦状态，几秒内降低移速
-                            此技能为 黄泉冥蝶 独有，属于独立于其他技能的近战攻击
-                            <br>
-                            <br>
-                            终焉虫鸣：冥蝶短暂消失，随后重现在玩家附近并快速释放一道【极乐冥波】，随后重复以上动作
-                            一组终焉虫鸣会重复释放 5 次冥波，若三秒内受到两次冥波的伤害，会导致玩家直接进入昏迷状态
-                            此技能为【困难】与【狂暴】难度独有
-                        </span>
-                    </div>
-                    <br>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="kuang1">
-                <div class="BOSStext2">
-                    <div id="a11"
-                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
-                        6.心枪暴雨</div>
-                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
-                    <br>
-                    <div class="BOSStext3">
-
-                        <span style="display: block; margin-bottom: 10px; color: #00aaff;">冷却时间：30秒</span>
-
-                        <span style="display: block; margin-bottom: 10px; color: rgb(0, 122, 28);">真空期：6秒</span>
-                        <span style="float: left;height: 145px;">描述：</span>
-                        <span style="color: brown;">
-                            冥蝶在3秒内于自身周围快速召唤16根心之枪，每根心之枪在生成2秒后会消失，并在玩家附近降落
-                            心枪的落点位置并不固定，可能的位置有：玩家当前位置、玩家附近区域、玩家行进方向上
-                            被心之枪命中的玩家会受到100点位面伤害
-                            该技能会对每个玩家额外生成一组心之枪（多一个人多一根枪）
-                            此技能为【归来的终焉极蝶】独有
-                        </span>
-                    </div>
-                    <br>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="kuang1">
-                <div class="BOSStext2">
-                    <div id="a12"
-                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
-                        7.幻影剑阵</div>
-
-                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
-                    <br>
-                    <div class="BOSStext3">
-
-                        <br>
-                        <span style="display: block; margin-bottom: 10px; color: #00aaff;">冷却时间：30秒</span>
-
-                        <span style="display: block; margin-bottom: 10px; color: rgb(0, 122, 28);">真空期：6秒</span>
-                        <span style="float: left;height: 145px;">描述：</span>
-                        <span style="color: brown;">
-                            冥蝶召唤一整圈紫色幻影剑环绕玩家，1.2秒后朝中心发射，狂暴幻影剑阵共30把，每把剑造成100接触伤害
-                            此技能在【归来的终焉极蝶】的战斗中，与正常的【幻影剑】互为独立技能，即狂暴蝶同时拥有两个版本的幻影剑技能，但只会单独释放其中一个
-                            <br>
-                            此技能为【归来的终焉极蝶】独有
-                        </span>
-                    </div>
-                    <br>
-                </div>
-            </div>
-            <br>
-            <br>
-      
-
         </div>
+    </div>
+    <br>
+    <div class="kuang">
+        <div id="a2" style="position: relative; padding-left: 40px;padding-bottom: 20px; font-size: 20px;">
+                <div  style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">(2). 奶油</div> 
+                
+      
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
+            <br>
+            <img class="liaolitu" src="./inger/naiyou.jpg" alt="">
+        </div>
+        <div>
+            <div style="margin-left: 40px;">
+                配方：使用羊奶和蛋制作,消耗一个羊奶与一个蛋
+                <br>
+                描述：一次制作三份保质期6天,用于烹饪时可提供0.5点乳制品，也可直接食用
+
+
+                <!-- <div style="margin-top: 10px;">
+                        饱食度：<span style="color: forestgreen;">+5</span>
+                        <br>
+                        理智值：<span style="color: forestgreen;">+3</span>
+                        <br>
+                        生命值：<span style="color: forestgreen;;">+1</span>
+                    </div> -->
+                <br>
+                <br>
+                <div class="a1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width: 45px;">饱食</th>
+                                <th style="width: 45px; left: 45px;">理智</th>
+                                <th style="width: 45px;
+                                   padding: 5px;  left: 90px;border-right: 1px solid #000000;">生命</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table>
+                </div>
+                <thead>
+                    <tr>
+                        <td><span style="color: forestgreen;">+5</span></td>
+                        <td><span style="color: brown;">+ 1</span></td>
+                        <td style="border-right: 1px solid #000000;"><span style="color: brown;">+ 3</span></td>
+                    </tr>
+                </thead>
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div>
+        <br>
+        <div style="margin-bottom: 20px; color: aliceblue;" class="liaolitext">(二).料理</div>
+        <div class="kuang">
+            <div id="a3" class="liaolitext1">
+                <div  style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">(1).蛋包饭</div> 
+
+                <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
+                <br>
+                <img class="liaolitu" src="./inger/danbaofan.jpg" alt="">
+            </div>
+            <div class="liaolitext2">
+                烹饪要求：粮袋，番茄，两个蛋度、
+                <br>
+                描述：30秒的烹饪时间，变质速度缓慢
+                <!-- <div style="margin-top: 10px;">
+                        饱食度：<span style="color: forestgreen;">+90</span>
+                        <br>
+                        理智值：<span style="color: forestgreen;">+20</span>
+                        <br>
+                        生命值：<span style="color: forestgreen;">+60</span>
+                    </div> -->
+                <br>
+                <br>
+                <div class="a1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>饱食</th>
+                                <th style="left: 45px;">理智</th>
+                                <th style="left: 90px;border-right: 1px solid #000000;">生命</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table>
+                </div>
+                <thead>
+                    <tr>
+                        <td><span style="color: forestgreen;">+25</span></td>
+                        <td><span style="color: brown;">- 50</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span style="color: brown;">-
+                                3</span></td>
+                    </tr>
+                </thead>
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="kuang">
+        <div id="a4" class="liaolitext1">
+            <div  style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">(2).憨八嘎</div> 
+
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
+            <br>
+            <img class="liaolitu" src="./inger/hbg.jpg" alt="">
+        </div>
+        <div class="liaolitext2">
+            烹饪要求：粮袋，乳制品，1肉度，番茄(或洋葱).
+            <br>
+            描述：30秒的烹饪时间，变质速度缓慢
+            <div style="margin-top: 10px;">
+                <!-- 饱食度：<span style="color: forestgreen;">+125</span>
+                        <br>
+                        理智值：<span style="color: forestgreen;">+10</span>
+                        <br>
+                        生命值：<span style="color: forestgreen;">+8</span> -->
+                <br>
+                <br>
+                <div class="a1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>饱食</th>
+                                <th style="left: 45px;">理智</th>
+                                <th style="left: 90px;border-right: 1px solid #000000;">生命</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table>
+                </div>
+                <thead>
+                    <tr>
+                        <td><span style="color: forestgreen;">+125</span></td>
+                        <td><span style="color: forestgreen;">+10</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+8</span></td>
+                    </tr>
+                </thead>
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="kuang">
+        <div id="a5" class="liaolitext1">
+            <div  style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">(3).拔丝萝卜脆</div> 
+
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
+            <br>
+            <img class="liaolitu" src="./inger/bslbc.jpg" alt="">
+        </div>
+        <div class="liaolitext2">
+            烹饪要求：两个萝卜，1甜味剂.
+            <br>
+            描述：15秒的烹饪时间，变质速度平均(不要在做糖豆的时候放两个萝卜不然会变成萝卜脆)
+            <div style="margin-top: 10px;">
+                <!-- 饱食度：<span style="color: forestgreen;">+25</span>
+                <br>
+                理智值：<span style="color: forestgreen;">+15</span>
+                <br>
+                生命值：<span style="color: forestgreen;">+30</span> -->
+                <br>
+                <br>
+                <div class="a1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>饱食</th>
+                                <th style="left: 45px;">理智</th>
+                                <th style="left: 90px;border-right: 1px solid #000000;">生命</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table>
+                </div>
+                <thead>
+                    <tr>
+                        <td><span style="color: forestgreen;">+25</span></td>
+                        <td><span style="color: forestgreen;">+15</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+30</span></td>
+                    </tr>
+                </thead>
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="kuang">
+        <div id="a6" class="liaolitext1">
+            <div  style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">(4).鱼香盛宴</div> 
+
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
+            <br>
+            <img class="liaolitu" src="./inger/yxsy.jpg" alt="">
+        </div>
+        <div class="liaolitext2">
+            烹饪要求：南瓜，蘑菇，0.5鱼度.
+            <br>
+            描述：40秒的烹饪时间，变质速度平均
+            <div style="margin-top: 10px;">
+                <!-- 饱食度：<span style="color: forestgreen;">+150</span>
+                <br>
+                理智值：<span style="color: forestgreen;">+20</span>
+                <br>
+                生命值：<span style="color: forestgreen;">+60</span> -->
+                <br>
+                <br>
+                <div class="a1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>饱食</th>
+                                <th style="left: 45px;">理智</th>
+                                <th style="left: 90px;border-right: 1px solid #000000;">生命</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table>
+                </div>
+                <thead>
+                    <tr>
+                        <td><span style="color: forestgreen;">+150</span></td>
+                        <td><span style="color: forestgreen;">+20</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+60</span></td>
+                    </tr>
+                </thead>
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="kuang">
+        <div id="a7" class="liaolitext1">
+            <div  style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">(5).红烩猫猫鱼</div> 
+
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
+            <br>
+            <img class="liaolitu" src="./inger/hhmmy.jpg" alt="">
+        </div>
+        <div class="liaolitext2">
+            烹饪要求：番茄，洋葱，1鱼度.
+            <br>
+            描述：40秒的烹饪时间，变质速度平均
+            <div style="margin-top: 10px;">
+                <!-- 饱食度：<span style="color: forestgreen;">+62.5</span>
+                <br>
+                理智值：<span style="color: forestgreen;">+30</span>
+                <br>
+                生命值：<span style="color: forestgreen;">+60</span> -->
+                <br>
+                <br>
+                <div class="a1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>饱食</th>
+                                <th style="left: 45px;">理智</th>
+                                <th style="left: 90px;border-right: 1px solid #000000;">生命</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table>
+                </div>
+                <thead>
+                    <tr>
+                        <td><span style="color: forestgreen;">+62.5</span></td>
+                        <td><span style="color: forestgreen;">+30</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+60</span></td>
+                    </tr>
+                </thead>
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="kuang">
+        <div id="a8" class="liaolitext1">
+            <div  style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">(6).榴莲刺刺酥</div> 
+
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
+            <br>
+            <img class="liaolitu" src="./inger/llccs.jpg" alt="">
+        </div>
+        <div class="liaolitext2">
+            烹饪要求：粮袋，蜂蜜，榴莲.
+            <br>
+            描述：一次收获两份，15秒的烹饪时间，变质速度缓慢
+            <div style="margin-top: 10px;">
+                <!-- 饱食度：<span style="color: forestgreen;">+25</span>
+                <br>
+                理智值：<span style="color: forestgreen;">+15</span>
+                <br>
+                生命值：<span style="color: forestgreen;">+20</span> -->
+                <br>
+                <br>
+                <div class="a1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>饱食</th>
+                                <th style="left: 45px;">理智</th>
+                                <th style="left: 90px;border-right: 1px solid #000000;">生命</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table>
+                </div>
+                <thead>
+                    <tr>
+                        <td><span style="color: forestgreen;">+25</span></td>
+                        <td><span style="color: forestgreen;">+15</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+20</span></td>
+                    </tr>
+                </thead>
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+    <div style="color: aliceblue;" class="liaolitext">(二).buff类料理</div>
+    <div class="kuang">
+        <div id="a9" class="liaolitext1">
+            <div  style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">(1)."我创死你!"</div> 
+
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
+            <br>
+            <img class="liaolitu" src="./inger/ccdg.jpg" alt="">
+        </div>
+        <div class="liaolitext2">
+            烹饪要求：粮袋，水果，乳制品，蜂蜜.
+            <br>
+            描述：40秒的烹饪时间，变质速度平均
+            <br>
+            效果：食用后会提供持续4分钟的30%移速加成
+            <div style="margin-top: 10px;">
+                <!-- 饱食度：<span style="color: forestgreen;">+12.5</span>
+                <br>
+                理智值：<span style="color: forestgreen;">+15</span>
+                <br>
+                生命值：<span style="color: forestgreen;">+8</span> -->
+                <br>
+                <br>
+                <div class="a1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>饱食</th>
+                                <th style="left: 45px;">理智</th>
+                                <th style="left: 90px;border-right: 1px solid #000000;">生命</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table>
+                </div>
+                <thead>
+                    <tr>
+                        <td><span style="color: forestgreen;">+12.5</span></td>
+                        <td><span style="color: forestgreen;">+15</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+8</span></td>
+                    </tr>
+                </thead>
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="kuang">
+        <div id="a10" class="liaolitext1">
+            <div  style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">(2).宝石苹果冰沙</div> 
+
+            <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+            <br>
+            <img class="liaolitu" src="./inger/bspgbs.jpg" alt="">
+        </div>
+        <div class="liaolitext2">
+            烹饪要求：宝石苹果，水果，冰，蜂蜜.
+            <br>
+            20秒的烹饪时间，变质速度非常缓慢
+            <br>
+            食用后4分钟内提升100魔法上限并且会略微降温
+            <div style="margin-top: 10px;">
+                <!-- 饱食度：<span style="color: forestgreen;">+12.5</span>
+                <br>
+                理智值：<span style="color: forestgreen;">+50</span>
+                <br>
+                生命值：<span style="color: forestgreen;">+40</span> -->
+                <br>
+                <br>
+                <div class="a1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>饱食</th>
+                                <th style="left: 45px;">理智</th>
+                                <th style="left: 90px;border-right: 1px solid #000000;">生命</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table>
+                </div>
+                <thead>
+                    <tr>
+                        <td><span style="color: forestgreen;">+12.5</span></td>
+                        <td><span style="color: forestgreen;">+50</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+40</span></td>
+                    </tr>
+                </thead>
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="kuang">
+        <div id="a11" class="liaolitext1">
+            <div  style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">(3).咖喱烩面</div> 
+
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
+            <br>
+            <img class="liaolitu" src="./inger/glhm.jpg" alt="">
+        </div>
+        <div class="liaolitext2">
+            烹饪要求：两个粮袋，茄子，0.5点菜度.
+            <br>
+            描述：30秒的烹饪时间，变质速度缓慢
+            <br>
+            效果：食用之后会提供饱腹buff暂时降低移动速度，并在之后的一段时间内大幅降低饱食度的消耗
+            <div style="margin-top: 10px;">
+                <!-- 饱食度：<span style="color: forestgreen;">+100</span>
+                <br>
+                理智值：<span style="color: forestgreen;">+10</span>
+                <br>
+                生命值：<span style="color: forestgreen;">+40</span> -->
+                <br>
+                <br>
+                <div class="a1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>饱食</th>
+                                <th style="left: 45px;">理智</th>
+                                <th style="left: 90px;border-right: 1px solid #000000;">生命</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table>
+                </div>
+                <thead>
+                    <tr>
+                        <td><span style="color: forestgreen;">+100</span></td>
+                        <td><span style="color: forestgreen;">+10</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+40</span></td>
+                    </tr>
+                </thead>
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="kuang">
+        <div id="a12" class="liaolitext1">
+            <div  style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">(4).雪顶苏打</div> 
+
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
+            <br>
+            <img class="liaolitu" src="./inger/xdsd.jpg" alt="">
+        </div>
+        <div class="liaolitext2">
+            烹饪要求：两个冰，蜂蜜，水果.
+            <br>
+            描述：20秒的烹饪时间，变质速度缓慢，
+            <br>
+            效果：食用后提供4分钟的降温效果，基斯食用会加快冰法的回复速度
+            <div style="margin-top: 10px;">
+                <!-- 饱食度：<span style="color: forestgreen;">+18.8</span>
+                <br>
+                理智值：<span style="color: forestgreen;">+33</span>
+                <br>
+                生命值：<span style="color: forestgreen;">+10</span> -->
+                <br>
+                <br>
+                <div class="a1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>饱食</th>
+                                <th style="left: 45px;">理智</th>
+                                <th style="left: 90px;border-right: 1px solid #000000;">生命</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table>
+                </div>
+                <thead>
+                    <tr>
+                        <td><span style="color: forestgreen;">+18.8</span></td>
+                        <td><span style="color: forestgreen;">+33</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+10</span></td>
+                    </tr>
+                </thead>
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="kuang">
+        <div id="a13" class="liaolitext1">
+            <div  style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">(5).焦糖布丁</div> 
+
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
+            <br>
+            <img class="liaolitu" src="./inger/jtbd.jpg" alt="">
+        </div>
+        <div class="liaolitext2">
+            烹饪要求：乳制品，蜂蜜，蛋.
+            <br>
+            描述：25秒的烹饪时间，一次收获两份保质期10天
+            <br>
+            效果：帕噜食用会加快雷法的回复速度
+            <div style="margin-top: 10px;">
+                <!-- 饱食度：<span style="color: forestgreen;">+25</span>
+                <br>
+                理智值：<span style="color: forestgreen;">+15</span>
+                <br>
+                生命值：<span style="color: forestgreen;">+8</span> -->
+                <br>
+                <br>
+                <div class="a1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>饱食</th>
+                                <th style="left: 45px;">理智</th>
+                                <th style="left: 90px;border-right: 1px solid #000000;">生命</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table>
+                </div>
+                <thead>
+                    <tr>
+                        <td><span style="color: forestgreen;">+25</span></td>
+                        <td><span style="color: forestgreen;">+15</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+8</span></td>
+                    </tr>
+                </thead>
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="kuang">
+        <div id="a14" class="liaolitext1">
+            <div  style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">(6).蒜蓉鲜蛤汤</div> 
+
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
+            <br>
+            <img class="liaolitu" src="./inger/srxgt.jpg" alt="">
+        </div>
+        <div class="liaolitext2">
+            烹饪要求：大蒜，冰，两个藤壶.
+            <br>
+            描述：60秒的烹饪时间，变质速度平均
+            <br>
+            效果：食用后会提供持续5分钟的升温效果
+            <div style="margin-top: 10px;">
+                <!-- 饱食度：<span style="color: forestgreen;">+37.5</span>
+                <br>
+                理智值：<span style="color: forestgreen;">+30</span>
+                <br>
+                生命值：<span style="color: forestgreen;">+40</span> -->
+                <br>
+                <br>
+                <div class="a1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>饱食</th>
+                                <th style="left: 45px;">理智</th>
+                                <th style="left: 90px;border-right: 1px solid #000000;">生命</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table>
+                </div>
+                <thead>
+                    <tr>
+                        <td><span style="color: forestgreen;">+37.5</span></td>
+                        <td><span style="color: forestgreen;">+30</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+40</span></td>
+                    </tr>
+                </thead>
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="kuang">
+        <div id="a15" class="liaolitext1">
+            <div  style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">(7).红霜雪糕</div> 
+
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
+            <br>
+            <img style="margin-left: 40px;" class="liaolitu" src="./inger/hsxg.jpg" alt="">
+        </div>
+        <div class="liaolitext2">
+            烹饪要求：石榴，冰，树枝.
+            <br>
+            描述：一次收获两份，15秒的烹饪时间，变质速度平均
+            <br>
+            效果：食用后会提供持续3分钟的降温效果，并且可在冰箱内永久存
+            <div style="margin-top: 10px;">
+                <!-- 饱食度：<span style="color: forestgreen;">+9.4</span>
+                <br>
+                理智值：<span style="color: forestgreen;">+15</span>
+                <br>
+                生命值：<span style="color: forestgreen;">+10</span> -->
+                <br>
+                <br>
+                <div class="a1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>饱食</th>
+                                <th style="left: 45px;">理智</th>
+                                <th style="left: 90px;border-right: 1px solid #000000;">生命</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table>
+                </div>
+                <thead>
+                    <tr>
+                        <td><span style="color: forestgreen;">+9.4</span></td>
+                        <td><span style="color: forestgreen;">+15</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+10</span></td>
+                    </tr>
+                </thead>
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="kuang">
+        <div id="a16" class="liaolitext1">
+            <div  style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">(8).冰镇大西瓜</div> 
+
+            <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
+            <br>
+            <img class="liaolitu" src="./inger/bzdxg.jpg" alt="">
+        </div>
+        <div class="liaolitext2">
+            烹饪要求：三个西瓜，冰.
+            <br>
+            描述：一次收获两份，40秒的烹饪时间，变质速度非常快
+            <br>
+            效果：食用后会提供持续5分钟的降温效果
+            <div style="margin-top: 10px;">
+                <!-- 饱食度：<span style="color: forestgreen;">+12.5</span>
+                <br>
+                理智值：<span style="color: forestgreen;">+15</span>
+                <br>
+                生命值：<span style="color: forestgreen;">+10</span> -->
+                <br>
+                <br>
+                <div class="a1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>饱食</th>
+                                <th style="left: 45px;">理智</th>
+                                <th style="left: 90px;border-right: 1px solid #000000;">生命</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table>
+                </div>
+                <thead>
+                    <tr>
+                        <td><span style="color: forestgreen;">+12.5</span></td>
+                        <td><span style="color: forestgreen;">+15</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+10</span></td>
+                    </tr>
+                </thead>
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="kuang">
+        <div id="a17" class="liaolitext1">
+            <div  style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">(9).鸳鸯锅</div> 
+
+        <hr style="position: absolute;left: 0px;"  color: #171717; size="1" width="958px">
+        <br>
+        <img style="width: 150px;" class="liaolitu" src="./inger/yyg.jpg" alt="">
+    </div>
+        <div class="liaolitext2">
+            烹饪要求：两个辣椒，0.5菜度，1肉度.
+            <br>
+            描述：40秒的烹饪时间，变质速度平均
+            <br>
+            效果食用后会提供持续10分钟的升温效果
+            <div style="margin-top: 10px;">
+                <!-- 饱食度：<span style="color: forestgreen;">+50</span>
+                <br>
+                理智值：<span style="color: forestgreen;">+5</span>
+                <br>
+                生命值：<span style="color: forestgreen;">+20</span> -->
+                <br>
+                <br>
+                <div class="a1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>饱食</th>
+                                <th style="left: 45px;">理智</th>
+                                <th style="left: 90px;border-right: 1px solid #000000;">生命</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table>
+                </div>
+                <thead>
+                    <tr>
+                        <td><span style="color: forestgreen;">+50</span></td>
+                        <td><span style="color: forestgreen;">+5</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+20</span></td>
+                    </tr>
+                </thead>
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="kuang">
+        <div id="a18" class="liaolitext1">
+            <div  style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">(10).蜘蛛网炒树枝</div> 
+
+            <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+            <br>
+            <img class="liaolitu" src="./inger/zzwcsz.jpg" alt="">
+        </div>
+        <div class="liaolitext2">
+            烹饪要求：两个树枝，两个蜘蛛网.
+            <br>
+            描述：40秒的烹饪时间，变质速度非常缓慢
+            <br>
+            效果：食用后会过一段时间就在人物脚底生成蜘蛛网共生成6次，生物踩上会减速40%不会对人物生效
+            <div style="margin-top: 10px;">
+                <!-- 饱食度：<span style="color: forestgreen;">+25</span>
+                <br>
+                理智值：<span style="color: brown;">-15</span>
+                <br>
+                生命值：<span style="color: brown;">-3</span> --> <br>
+                <br>
+                <div class="a1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>饱食</th>
+                                <th style="left: 45px;">理智</th>
+                                <th style="left: 90px;border-right: 1px solid #000000;">生命</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table>
+                </div>
+                <thead>
+                    <tr>
+                        <td><span style="color: forestgreen;">+25</span></td>
+                        <td><span style="color: brown;">-15</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: brown;">-3</span></td>
+                    </tr>
+                </thead>
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div style="margin-bottom: 20px;" class="kuang">
+        <div style="margin-bottom: 20px;" id="a19" class="liaolitext1">
+            <div  style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">(11).红烧蛙镜鱼</div> 
+
+            <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+            <br>
+            <img class="liaolitu" src="./inger/hsjwy.jpg" alt="">
+        </div>
+        <div class="liaolitext2">
+            烹饪要求：蛙腿，大蒜，鱼.
+            <br>
+            描述：40秒的烹饪时间，变质速度平均
+            <br>
+            效果：食用后人物2天内免疫潮湿
+            <div style="margin-top: 10px;margin-bottom: 20px;">
+                <!-- 饱食度：<span style="color: forestgreen;">+37.5</span>
+                <br>
+                理智值：<span style="color: brown;">+15</span>
+                <br>
+                生命值：<span style="color: brown;">+40</span> --> <br>
+                <br>
+                <div class="a1">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>饱食</th>
+                                <th style="left: 45px;">理智</th>
+                                <th style="left: 90px;border-right: 1px solid #000000;">生命</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <table>
+                </div>
+                <thead>
+                    <tr>
+                        <td><span style="color: forestgreen;">+37.5</span></td>
+                        <td><span style="color: forestgreen;">+15</span></td>
+                        <td style="width: 45.78px; border-right: 1px solid #000000;"><span
+                                style="color: forestgreen;">+40</span></td>
+                    </tr>
+                </thead>
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <br>
     </div>
 </body>
 <script>
