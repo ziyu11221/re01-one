@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 星卡mod人物介绍</title>
+</head>
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    .bigbox {
+        width: 100%;
+        height: 100%;
+        background: url(./inger/bjt.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center center;
+        /* background-attachment: fixed; */
+        border-radius: 20px;
+    }
+
+    .box {
+        width: 1000px;
+        margin: auto;
+        margin-bottom: 20px;
+
+    }
+
+    a {
+        text-decoration: none;
+        width: 170px;
+        color: black;
+    }
+
+    .kuang {
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 960px;
+        border-radius: 5px;
+        margin-left: 20px;
+        height: 295.2px;
+    }
+
+    .ul1 {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 1px solid #e7e7e7;
+        background-color: #f3f3f3;
+
+    }
+
+    .li1 {
+        float: left;
+        margin: auto;
+    }
+
+    .li1 a {
+        display: block;
+        color: #666;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        width: 100px;
+    }
+
+    .li1 a:hover:not(.active) {
+        background-color: #ddd;
+    }
+
+    .li1 a.active {
+        color: white;
+        background-color: #4CAF50;
+    }
+
+    .mdbox {
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        font-size: 30px;
+        text-align: center;
+        line-height: 50px;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        background-color: #00aaff;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #add8e6;
+
+    }
+
+    .ietm:hover {
+        background-color: #00ff7b;
+        color: white;
+    }
+
+    .mdbox1 {
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+        background-color: #f3f3f3;
+        font-size: 25px;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+        background-color: #00aaff;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #add8e6;
+    }
+
+    .mdbox2 {
+        display: inline-block;
+        width: 200px;
+        height: 50px;
+
+        font-size: 25px;
+        text-align: center;
+        line-height: 50px;
+        background-color: #00aaff;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #add8e6;
+    }
+
+    .list {
+        list-style: none;
+        padding-left: 0px;
+        background-color: #e3e3e3;
+        float: left;
+        width: 170px;
+
+        display: none;
+        cursor: pointer;
+    }
+
+    .list1 {
+        list-style: none;
+        padding-left: 0px;
+        background-color: #e3e3e3;
+        float: left;
+        width: 170px;
+        cursor: pointer;
+        display: none;
+    }
+
+  
+
+    .list4 {
+        list-style: none;
+        padding-left: 0px;
+        background-color: #e3e3e3;
+        float: left;
+        width: 170px;
+
+        cursor: pointer;
+        display: none;
+    }
+
+    .list6 {
+        list-style: none;
+        padding-left: 0px;
+        background-color: #e3e3e3;
+        float: left;
+        width: 170px;
+
+        cursor: pointer;
+        display: none;
+    }
+
+    .list7 {
+        list-style: none;
+        padding-left: 0px;
+        background-color: #e3e3e3;
+        float: left;
+        width: 170px;
+
+        cursor: pointer;
+        display: none;
+    }
+
+    .list8 {
+        list-style: none;
+        padding-left: 0px;
+        background-color: #e3e3e3;
+        float: left;
+        width: 170px;
+
+        cursor: pointer;
+        display: none;
+    }
+
+    .ietm {
+        width: 200px;
+        height: 50px;
+        float: left;
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+        display: block;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #add8e6;
+        background-color: #ffc7c7;
+    }
+
+    .ietm a {
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    .ietm1 {
+        width: 200px;
+        height: 50px;
+        float: left;
+        font-size: 20px;
+        line-height: 50px;
+        text-align: center;
+        display: block;
+        border-style: solid;
+        border-width: 1px;
+        border-color: #add8e6;
+        background-color: #c7ecff;
+    }
+
+    .ietm1 a {
+        color: #000;
+        padding: 8px 16px;
+        text-decoration: none;
+    }
+
+    .dingwei {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0px;
+        left: 0px;
+        border: none;
+        width: 200px;
+
+
+    }
+
+    .dingwei1 {
+        position: absolute;
+        top: 50px;
+        width: 202px;
+        height: 9848px;
+        background-color: #e3e3e3;
+    }
+
+    .wptext {
+        width: 500px;
+        height: 105.6px;
+        margin: auto;
+        color: rgb(229, 255, 0);
+        text-align: center;
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    .rwtext {
+        width: 500px;
+        height: 105.6px;
+        margin: auto;
+        color: rgb(229, 255, 0);
+        text-align: center;
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+
+    .rwtext1 {
+        font-size: 25px;
+        color: rgb(229, 255, 0);
+    }
+
+    .rwtext2 {
+        position: relative;
+        font-size: 20px;
+    }
+
+    .rwtext3 {
+        font-size: 18px;
+        margin-left: 40px;
+        width: 870px;
+    }
+
+    .kuang1 {
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 960px;
+        border-radius: 5px;
+        margin-left: 20px;
+
+    }
+
+    .bjbox {
+        width: 500px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: #add8e6;
+        padding: 10px;
+        margin-left: 30px;
+        float: left;
+    }
+
+    .bjjs {
+        font-size: 30px;
+        text-align: center;
+
+    }
+
+    .bjtext {
+        font-size: 30px;
+    }
+
+    .daohanglan1 {
+        width: 700px;
+        margin: auto;
+    }
+</style>
+
+<body>
+    <div class="dingwei1">
+        <div class="dingwei">
+            <div style="cursor: pointer;font-size: 25px;" id="clickOpen" class="mdbox">
+                帕鲁 <i class="ziti iconfont icon-xiahua"></i>
+            </div>
+
+            <br>
+            <div>
+                <ul class="list">
+                    <li id="clickOpen3" class="ietm"><a href="#a1">基础属性</a></li>
+                    <li id="clickOpen4" class="ietm"><a href="#a111">专属技能</a></li>
+                    <ul class="list4">
+                        <li class="ietm1"><a href="#a2">1.电光一闪</a></li>
+                        <li class="ietm1"><a href="#a3">2.洛亚之盈</a></li>
+                        <li class="ietm1"><a href="#a4">3.魔咒-破望</a></li>
+                    </ul>
+
+
+                    <li id="clickOpen7" class="ietm"><a href="#a111">专属物品</a></li>
+                    <ul class="list7">
+                        <li class="ietm1"><a href="#a5">1.灾厄雷牙</a></li>
+                        <li class="ietm1"><a href="#a6">2.雷魔官帽</a></li>
+                        <li class="ietm1"><a href="#a7">3.建御雷鼓</a></li>
+                        <li class="ietm1"><a href="#a8">4.技能树</a></li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div style="cursor: pointer;" id="clickOpen1" class="mdbox1">
+                基斯 <i class="ziti iconfont icon-xiahua"></i>
+            </div>
+            <br>
+            <div>
+                <ul class="list1">
+                    <li id="clickOpen5" class="ietm"><a href="#a9">基础属性</a></li>
+                    <li id="clickOpen6" class="ietm"><a href="#a111">专属技能</a></li>
+                    <ul class="list6">
+                        <li class="ietm1"><a href="#a10">1.冰魅</a></li>
+                        <li class="ietm1"><a href="#a11">2.洛亚之盈</a></li>
+                        <li class="ietm1"><a href="#a12">3.魔咒-空久</a></li>
+                        <li class="ietm1"><a href="#a13">4.冰魄</a></li>
+                    </ul>
+                    <li id="clickOpen8" class="ietm"><a href="#a111">专属物品</a></li>
+                    <ul class="list8">
+                        <li class="ietm1"><a href="#a14">1.灾厄冰晶</a></li>
+                        <li class="ietm1"><a href="#a15">2.冰魔官帽</a></li>
+                        <li class="ietm1"><a href="#a16">3.技能树</a></li>
+                    </ul>
+
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="bigbox">
+        <ul class="ul1">
+            <div class="daohanglan1">
+                <li style="margin-left: 40px;" class="li1"><a href="https://ziyu11221.github.io/re01-one/">主页</a></li>
+                <li class="li1"><a href="#news">人物</a></li>
+                <li class="li1"><a class="active" href="#contact">物品</a></li>
+                <li class="li1"><a href="https://ziyu11221.github.io/re01-one/liaoli.html">食谱</a>
+                </li>
+                <li class="li1"><a href="https://ziyu11221.github.io/re01-one/boss">boss</a></li>
+            </div>
+
+        </ul>
+        <div class="box">
+
+            <div class="rwtext">
+                <br>
+                星卡mod人物介绍
+            </div>
+
+            <div class="rwtext1">
+                (一).雷枪.帕鲁提扎努
+            </div>
+            <br>
+            <div class="kuang1">
+                <div>
+
+                    <img style="width: 300px;" src="./inger/帕鲁.png" alt="">
+
+
+                    <div style="margin-top: 40px;" class="bjbox">
+                        <div class="bjjs">
+                            <img style="width: 100px;" src="./inger/设定.png" alt="">
+                        </div>
+
+                        <div class="bjtext">
+                            《星之卡比》系列中的BOSS与后期的同伴
+                            以异空间魔法穿越至永恒大陆
+                            目标是回收散落在各个空间的【邪魔之心】
+                            为三魔官的首领，被主人赐予了雷电魔法
+                            游戏风格偏战斗,拥有强大的战斗力与快节奏的发展速度</div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px;" class="kuang1">
+                <div class="rwtext2">
+                    <br>
+                    <div id="a1" style="font-size: 20px;padding-left: 20px; padding-bottom: 10px; width: 200px;"> 1.基础属性
+                    </div>
+
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="rwtext3">
+                        <img style="width: 200px;" src="./inger/帕鲁三维.png" alt="">
+                        <div style="color: brown;">生命值：200
+                            <br>
+                            饱食度：200
+                            <br>
+                            理智值：200
+                        </div>
+                        <br>
+                        <img width="75px" src="./inger/帕鲁法力值.png" alt="">
+                        <div style="color: #00aaff;margin-bottom: 10px;">75法力上限，默认每秒回复10点法力
+                            <br>
+                            [饱食度＜50]或[潮湿度＞40]时，法力的恢复速度会减半
+                        </div>
+                        <br>
+                        <div style="color: rgb(0, 122, 28);">免疫各种闪电伤害</div>
+                        <br>
+
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <div class="rwtext1">
+                (二).帕鲁技能
+            </div>
+            <br>
+            <div class="kuang1">
+                <div class="rwtext2">
+                    <div id="a2"
+                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
+                        1.电光一闪</div>
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="rwtext3">
+                        <img style="width: 200px;" src="./inger/电光一闪.png" alt="">
+                        <br>
+                        <br>
+                        <div style="color: brown;">按下位移按键（默认为C，可在模组设置界面修改）向面朝方向发动来进行高速冲刺
+                        </div>
+                        <br>
+
+                        <div style="color: #00aaff;margin-bottom: 10px;">消耗20法力，默认有1秒的冷却时间
+                        </div>
+                        <br>
+                        <div style="color: rgb(0, 122, 28);">冲刺发动瞬间会获得0.2秒的无敌帧，免疫所有的物理攻击
+                            位移会强制中断各种特殊 <br>
+                            状态，并使部分行为瞬间完成（如进食）</div>
+                        <br>
+
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+            <br>
+            <div class="kuang1">
+                <div class="rwtext2">
+                    <div id="a3"
+                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
+                        2.洛亚之盈</div>
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="rwtext3">
+                        <img style="width: 200px;" src="./inger/洛亚之盈1.png" alt="">
+                        <img style="width: 200px;" src="./inger/洛亚之盈2.png" alt="">
+                        <br>
+                        <br>
+                        <div style="color: brown;">可以按技能轮盘（默认H）或从制作栏发动
+                        </div>
+                        <br>
+
+                        <div style="color: #00aaff;margin-bottom: 10px;">洛亚之盈期间，角色判定为飞行状态，无视地形与生物的碰撞体积
+                            期间允许跨越海洋
+                            <br>与洞穴深渊，不会受到地陷与蛛网的减速效果
+                        </div>
+                        <br>
+                        <div style="color: rgb(0, 122, 28);">移速提升25%,持续消耗法力值（每秒6点）</div>
+                        <br>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <div class="kuang1">
+                <div class="rwtext2">
+                    <div id="a4"
+                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
+                        3.魔咒-破望</div>
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="rwtext3">
+                        <img style="width: 200px;" src="./inger/魔咒-破望.png" alt="">
+                        <br>
+                        <br>
+                        <div style="color: brown;">可以按技能轮盘（默认H）或从制作栏发动
+                        </div>
+                        <br>
+
+                        <div style="color: #00aaff;margin-bottom: 10px;">在当前位置召唤[主魔法结印]
+                            <br>
+                            同时全图的其他玩家身边会生成[传送结印]
+                            <br>
+                            与传送结印互动的玩家将会直接传送到[主魔法结印]的位置
+                            <br>
+                            此功能在单人游玩时暂无用处
+                        </div>
+                        <br>
+                        <div style="color: rgb(0, 122, 28);">消耗20精神</div>
+                        <br>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <div class="rwtext1">
+                (三).帕鲁专属物品
+            </div>
+            <br>
+            <div class="kuang1">
+                <div class="rwtext2">
+                    <div id="a5"
+                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
+                        1.灾厄雷牙（雷枪）</div>
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="rwtext3">
+                        <img style="width: 200px;" src="./inger/灾厄雷牙.png" alt="">
+                        <img style="width: 460px;" src="./inger/雷牙千斩.png" alt="">
+                        <br>
+                        <br>
+                        <div style="color: brown;">无限耐久的武器，拥有1.8的攻击距离和60点攻击
+                        </div>
+                        <br>
+
+                        <div style="color: #00aaff;margin-bottom: 10px;">右键可以发动技能[雷牙千斩]消耗75法力
+                            进入无敌状态
+                            <br>并发动一次穿刺位移
+                        </div>
+                        <br>
+                        <div style="color: rgb(0, 122, 28);">被[雷牙千斩]穿刺命中的敌人会受到30x6的物理伤害</div>
+                        <br>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="kuang1">
+                <div class="rwtext2">
+                    <div id="a6"
+                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
+                        2.雷魔官帽</div>
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="rwtext3">
+                        <img style="width: 200px;" src="./inger/雷魔官帽.png" alt="">
+                        <br>
+                        <br>
+                        <div style="color: brown;">拥有30%护甲值、20%防水，耐久无限
+                        </div>
+                        <br>
+
+                        <div style="color: #00aaff;margin-bottom: 10px;">帽子附带一个小物品栏，可以放置各种季节衣物，使魔官
+                            <br> 帽获得额外属性加成（防水、精神加成、保暖隔热）
+                            如：
+                            <br>
+                            海象帽、牛角帽、眼球伞、高礼帽、雨帽
+                        </div>
+                        <br>
+                        <div style="color: rgb(0, 122, 28);">特殊：可以放置启迪之冠，魔官帽可以激活启迪之冠效果</div>
+                        <br>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="kuang1">
+                <div class="rwtext2">
+                    <div id="a7"
+                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
+                        3.建御雷鼓</div>
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="rwtext3">
+                        <img style="width: 200px;" src="./inger/建御雷鼓.png" alt="">
+                        <br>
+                        <br>
+                        <div style="color: brown;">雷鼓拥有2000点生命值，再其附近可以解锁【雷鼓模块】客机，用于制作可以更改雷鼓功能的模块组件
+                        </div>
+                        <br>
+
+                        <div style="color: #00aaff;margin-bottom: 10px;">模块列表：
+                            <br>
+                            电光：使雷鼓获得远程攻击能力，每次造成50x3伤害
+                            <br>
+                            雷鸣：使雷鼓获得范围攻击能力，每次攻击造成300范围伤害，与电光组件一起装备时会获得强化
+                            <br>
+                            驭行：使雷鼓可以跟随主人移动
+                            <br>
+                            交响：强化附近所有玩家40%的攻击力
+                            <br>
+                            欢腾：强化附近所有玩家的移动速度，并返还部分【电光一闪】与【雷牙千斩】的法力消耗
+
+                        </div>
+                        <br>
+                        <div style="color: rgb(0, 122, 28);">消耗材料：金子x30 齿轮x6 烂电线x12</div>
+                        <br>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="kuang1">
+                <div class="rwtext2">
+                    <div id="a8"
+                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
+                        4.技能树</div>
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="rwtext3">
+                        <img style="width: 200px;" src="./inger/帕鲁技能树.png" alt="">
+                        <br>
+                        <br>
+                        <div style="color: brown;">雷魔官目前有44个技能点，其中6个未制作完毕无法使用
+                            这些技能点分为六个不同线路
+                        </div>
+                        <br>
+
+                        <div style="color: #00aaff;margin-bottom: 10px;">主题分别为：
+                            雷枪附魔、雷鸣腾跃、法力强化、法力回复、闪电蓄能、实用主义
+
+                        </div>
+                        <br>
+                        <div style="color: rgb(0, 122, 28);">具体技能介绍可以观看视频：
+                            <br>
+                            <a
+                                href="https://www.bilibili.com/video/BV12j421S7Za/">https://www.bilibili.com/video/BV12j421S7Za/</a>
+                        </div>
+                        <br>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+
+
+
+            <div class="rwtext1">
+                (一).冰斧.基斯
+            </div>
+            <br>
+            <div class="kuang1">
+                <div>
+
+                    <img style="height: 413.81px;" src="./inger/基斯.png" alt="">
+
+
+                    <div style="margin-top: 40px;" class="bjbox">
+                        <div class="bjjs">
+                            <img style="width: 100px;" src="./inger/设定.png" alt="">
+                        </div>
+
+                        <div style="font-size: 29px;" class="bjtext">
+                            《星之卡比》系列中的BOSS与后期的同伴
+                            后雷魔官一步来到永恒大陆
+                            目标是回收散落在各个空间的【邪魔之心】
+                            被主人赐予了冰霜魔法
+                            游戏风格偏居家实用、战斗风格偏法师
+                            拥有强大的控制能力，居家玩法舒适，战斗风格偏远程法师</div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 20px;" class="kuang1">
+                <div class="rwtext2">
+                    <br>
+                    <div id="a9" style="font-size: 20px;padding-left: 20px; padding-bottom: 10px; width: 200px;"> 1.基础属性
+                    </div>
+
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="rwtext3">
+                        <img style="width: 200px;" src="./inger/基斯三维.png" alt="">
+                        <div style="color: brown;">生命值：175
+                            <br>
+                            饱食度：200
+                            <br>
+                            理智值：250
+                        </div>
+                        <br>
+                        <img width="75px" src="./inger/基斯法力值.png" alt="">
+                        <div style="color: #00aaff;margin-bottom: 10px;">75法力上限，默认每秒回复10点法力
+                            <br>
+                            [饱食度＜50]或[潮湿度＞40]时，法力的恢复速度会减半
+                        </div>
+                        <br>
+                        <div style="color: rgb(0, 122, 28);">免疫各种闪电伤害</div>
+                        <br>
+
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <div class="rwtext1">
+                (二).基斯技能
+            </div>
+            <br>
+            <div class="kuang1">
+                <div class="rwtext2">
+                    <div id="a10"
+                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
+                        1.冰魅</div>
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="rwtext3">
+                        <img style="height: 148.32px;" src="./inger/冰魅.png" alt="">
+                        <img style="width: 200px;" src="./inger/冰魅1.png" alt="">
+                        <br>
+                        <br>
+                        <div style="color: brown;">
+                            按下位移按键（默认为C，可在模组设置界面修改）变为一颗极光之星，获得高额移动并判定为飞行状态，期间收到攻击会消耗20法力产生冰霜护盾抵御攻击
+                        </div>
+                        <br>
+
+                        <div style="color: #00aaff;margin-bottom: 10px;">冰魅期间再次C或右键一处地点，可以瞬移并结束冰魅状态，对落点处的生物造成4层冰冻状态
+                        </div>
+                        <br>
+                        <div style="color: rgb(0, 122, 28);">冰魅期间法力消耗速度为每秒12</div>
+                        <br>
+
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+            <br>
+            <div class="kuang1">
+                <div class="rwtext2">
+                    <div id="a11"
+                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
+                        2.洛亚之盈</div>
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="rwtext3">
+                        <img style="width: 200px;" src="./inger/基斯洛亚之盈.png" alt="">
+                        <br>
+                        <br>
+                        <div style="color: brown;">可以按技能轮盘（默认H）或从制作栏发动
+                        </div>
+                        <br>
+
+                        <div style="color: #00aaff;margin-bottom: 10px;">洛亚之盈期间，角色判定为飞行状态，无视地形与生物的碰撞体积
+                            期间允许跨越海洋
+                            <br>与洞穴深渊，不会受到地陷与蛛网的减速效果
+                        </div>
+                        <br>
+                        <div style="color: rgb(0, 122, 28);">移速提升25%,持续消耗法力值每秒4点(低于雷魔官)</div>
+                        <br>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <div class="kuang1">
+                <div class="rwtext2">
+                    <div id="a12"
+                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
+                        3.魔咒-空久</div>
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="rwtext3">
+                        <img style="width: 200px;" src="./inger/魔咒-空久.png" alt="">
+                        <br>
+                        <br>
+                        <div style="color: brown;">可以按技能轮盘（默认H）或从制作栏发动
+                        </div>
+                        <br>
+
+                        <div style="color: #00aaff;margin-bottom: 10px;">快速将附近的所有怨念生物尸体转化为邪魔之心
+                        </div>
+                        <br>
+                        <div style="color: rgb(0, 122, 28);">无任何消耗</div>
+                        <br>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="kuang1">
+                <div class="rwtext2">
+                    <div id="a13"
+                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
+                        4.冰魄</div>
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="rwtext3">
+                        <img style="width: 200px;" src="./inger/冰魄之所.png" alt="">
+                        <img style="height: 218px;" src="./inger/冰魄之所1.png" alt="">
+                        <img style="height: 218px;" src="./inger/冰魄之所3.png" alt="">
+                        <br>
+                        <br>
+                        <div style="color: brown;">角色可以点击屏幕上的ui按钮开启专属容器【冰魄之所】
+                            冰魄之所拥有5倍保鲜，默认为2格空间，可通过技能树强化
+                        </div>
+                        <br>
+
+                        <div style="color: #00aaff;margin-bottom: 10px;">②可以按技能轮盘（默认H）或从制作栏发动【冰魄之礼】
+                            冰魄之礼可以使大范围内的火焰直接熄灭，并使处于冰冻状态的生物转变为【冰封】状态，冰封后生物可以被冰魔官收入冰魄之所随身携带
+                        </div>
+                        <br>
+                        <div style="color: rgb(0, 122, 28);">冰封状态的生物不会自行解冻，给予火把或再次被冰魄之礼命中会转变回冰冻状态</div>
+                        <br>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <div class="rwtext1">
+                (三).基斯专属物品
+            </div>
+            <br>
+            <div class="kuang1">
+                <div class="rwtext2">
+                    <div id="a14"
+                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
+                        1.灾厄冰晶</div>
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="rwtext3">
+                        <img style="width: 200px;" src="./inger/灾厄冰晶.png" alt="">
+                        <img style="width: 664px; height: 240px;" src="./inger/冰晶飞轮.png" alt="">
+                        <br>
+                        <br>
+                        <div style="color: brown;">无限耐久的武器，拥有1.4的攻击距离和70点攻击
+                        </div>
+                        <br>
+
+                        <div style="color: #00aaff;margin-bottom: 10px;">在点亮冰晶飞轮技能后右键可以发动技能[冰晶飞轮]消耗75法力
+
+                        </div>
+                        <br>
+                        <div style="color: rgb(0, 122, 28);">手持冰斧时，角色脱离冰魅的冰冻效果会被替换为200点范围伤害</div>
+                        <br>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="kuang1">
+                <div class="rwtext2">
+                    <div id="a15"
+                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
+                        2.冰魔官帽</div>
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="rwtext3">
+                        <img style="width: 200px;" src="./inger/冰魔官帽.png" alt="">
+                        <br>
+                        <br>
+                        <div style="color: brown;">拥有30%护甲值、20%防水，耐久无限
+                        </div>
+                        <br>
+
+                        <div style="color: #00aaff;margin-bottom: 10px;">帽子附带一个小物品栏，可以放置各种季节衣物，使魔官
+                            <br> 帽获得额外属性加成（防水、精神加成、保暖隔热）
+                            如：
+                            <br>
+                            海象帽、牛角帽、眼球伞、高礼帽、雨帽
+                        </div>
+                        <br>
+                        <div style="color: rgb(0, 122, 28);">特殊：可以放置启迪之冠，魔官帽可以激活启迪之冠效果</div>
+                        <br>
+                    </div>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="kuang1">
+                <div class="rwtext2">
+                    <div id="a16"
+                        style="font-size: 20px;padding-left: 20px;padding-top: 20px; padding-bottom: 10px; width: 200px;">
+                        3.技能树</div>
+                    <hr style="position: absolute;left: 0px;" color: #171717; size="1" width="958px">
+                    <br>
+                    <div class="rwtext3">
+                        <img style="width: 200px;" src="./inger/基斯技能树.png" alt="">
+                        <br>
+                        <br>
+                        <div style="color: brown;">雷魔官目前有41个技能点，其中3个未制作完毕无法使用
+                            这些技能点分为八个不同线路
+                        </div>
+                        <br>
+
+                        <div style="color: #00aaff;margin-bottom: 10px;">主题分别为：
+                            冰晶飞轮、飞轮掌控、魔法冰棱、冰魅强化、冰魄之所、冰霜附魔、魔力强化、魔法书管理
+
+                        </div>
+                        <br>
+                        <div style="color: rgb(0, 122, 28);">具体技能介绍可以观看视频：
+                            <br>
+                            <a
+                                href="https://www.bilibili.com/video/BV1vZ421y7ad/">https://www.bilibili.com/video/BV1vZ421y7ad//</a>
+                        </div>
+                        <br>
+
+                    </div>
+                    <br>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    </div>
+    </div>
+
+    <button id="clickOpen5" style="display: none;">按钮</button>
+</body>
+<script>
+    var clickBth = document.getElementById('clickOpen')
+    var clickBth1 = document.getElementById('clickOpen1')
+    var clickBth4 = document.getElementById('clickOpen4')
+    var clickBth6 = document.getElementById('clickOpen6')
+    var clickBth7 = document.getElementById('clickOpen7')
+    var clickBth8 = document.getElementById('clickOpen8')
+    var list = document.getElementsByClassName('list')[0];
+    var list1 = document.getElementsByClassName('list1')[0];
+    var list4 = document.getElementsByClassName('list4')[0];
+    var list6 = document.getElementsByClassName('list6')[0];
+    var list7 = document.getElementsByClassName('list7')[0];
+    var list8 = document.getElementsByClassName('list8')[0];
+    var isOpen = false;
+    clickBth.addEventListener('click', function () {
+        isOpen = !isOpen;
+        if (isOpen) {
+            list.style.display = 'inline-block';
+        }
+        else {
+            list.style.display = 'none';
+        }
+    })
+
+    var isOpen1 = false;
+
+    clickBth1.addEventListener('click', function () {
+        isOpen1 = !isOpen1;
+        if (isOpen1) {
+            list1.style.display = 'inline-block';
+        }
+        else {
+            list1.style.display = 'none';
+        }
+    })
+
+    
+
+    
+
+    var isOpen5 = false;
+
+    clickBth4.addEventListener('click', function () {
+        isOpen5 = !isOpen5;
+        if (isOpen5) {
+            list4.style.display = 'inline-block';
+        }
+        else {
+            list4.style.display = 'none';
+        }
+    })
+   
+    var isOpen7 = false;
+    clickBth6.addEventListener('click', function () {
+        isOpen7 = !isOpen7;
+        if (isOpen7) {
+            list6.style.display = 'inline-block';
+        }
+        else {
+            list6.style.display = 'none';
+        }
+    })
+    var isOpen8 = false;
+    clickBth7.addEventListener('click', function () {
+        isOpen8 = !isOpen8;
+        if (isOpen8) {
+            list7.style.display = 'inline-block';
+        }
+        else {
+            list7.style.display = 'none';
+        }
+    })
+    var isOpen9 = false;
+    clickBth8.addEventListener('click', function () {
+        isOpen9 = !isOpen9;
+        if (isOpen9) {
+            list8.style.display = 'inline-block';
+        }
+        else {
+            list8.style.display = 'none';
+        }
+    })
+
+</script>
+
+</html>
